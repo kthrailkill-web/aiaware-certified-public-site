@@ -6,7 +6,7 @@ const WHY_NOW_STATS = [
   { stat: "100:1", label: "Machine-to-human identity ratio across enterprise cloud environments" },
   { stat: "48%", label: "Of cybersecurity pros rank agentic AI as the #1 attack vector for 2026" },
   { stat: "76%", label: "Of organizations report shadow AI problems — up 15% year-over-year" },
-  { stat: "€35M", label: "Maximum EU AI Act fine — or 7% of global revenue" },
+  { stat: "$38M", label: "Maximum EU AI Act fine — or 7% of global revenue" },
 ];
 
 const COURSE1_MODULES = [
