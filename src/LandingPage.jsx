@@ -60,8 +60,8 @@ const PRICING = [
     originalPrice: "$697",
     per: "Available Now",
     features: [
-      "8 modules \u2022 24-32 hours",
-      "Hands-on labs + capstone",
+      "8 modules \u2022 ~26 hours",
+      "6 hands-on labs + capstone",
       "IAM specialty credential",
       "Lifetime access",
     ],
@@ -100,7 +100,7 @@ const PRICING = [
     featured: false,
     highlighted: true,
     badge: "Best Value",
-    note: "Full program launches in May",
+    note: "Pre-order price valid through July 1 \u2022 Launches in May",
   },
   {
     tier: "Enterprise",
@@ -353,7 +353,7 @@ function CoursesOverviewSection() {
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center gap-2 text-sm text-white/85">
-                <span className="text-[#0D7377]">&#9656;</span> 8 modules &bull; 24-32 hours &bull; 8 hands-on labs
+                <span className="text-[#0D7377]">&#9656;</span> 8 modules &bull; ~26 hours &bull; 6 labs + capstone
               </div>
               <div className="flex items-center gap-2 text-sm text-white/85">
                 <span className="text-[#0D7377]">&#9656;</span> NHIs, MCP security, privilege sprawl, ITDR, Zero Trust
@@ -398,7 +398,7 @@ function CoursesOverviewSection() {
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center gap-2 text-sm text-white/70">
-                <span className="text-[#4CAF50]/40">&#9656;</span> 8 modules &bull; 20-24 hours &bull; 8 hands-on labs
+                <span className="text-[#4CAF50]/40">&#9656;</span> 8 modules &bull; 20-24 hours &bull; 7 labs + capstone
               </div>
               <div className="flex items-center gap-2 text-sm text-white/70">
                 <span className="text-[#4CAF50]/40">&#9656;</span> EU AI Act, ISO 42001, NIST AI RMF, bias, model risk
@@ -439,7 +439,7 @@ function CoursesOverviewSection() {
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center gap-2 text-sm text-white/70">
-                <span className="text-[#64C8FF]/40">&#9656;</span> 8 modules &bull; 20-24 hours &bull; 8 hands-on labs
+                <span className="text-[#64C8FF]/40">&#9656;</span> 8 modules &bull; 20-24 hours &bull; 7 labs + capstone
               </div>
               <div className="flex items-center gap-2 text-sm text-white/70">
                 <span className="text-[#64C8FF]/40">&#9656;</span> Shadow AI, agent security, MLSecOps, IR, SOC playbooks
@@ -530,10 +530,10 @@ function CurriculumSection() {
   const [activeTab, setActiveTab] = useState("course1");
   const moduleMap = { course1: COURSE1_MODULES, course2: COURSE2_MODULES, course3: COURSE3_MODULES, course4: COURSE4_MODULES };
   const infoMap = {
-    course1: { label: "Course 1", title: "IAM for the Agentic AI Era", color: "#0D7377", hours: "24-32 hours" },
-    course2: { label: "Course 2", title: "AI Compliance & Governance Frameworks", color: "#4CAF50", hours: "20-24 hours" },
-    course3: { label: "Course 3", title: "Operating & Securing AI in Production", color: "#64C8FF", hours: "20-24 hours" },
-    course4: { label: "Course 4", title: "AI Governance for Engineers", color: "#F59E0B", hours: "~12 hours" },
+    course1: { label: "Course 1", title: "IAM for the Agentic AI Era", color: "#2DD4BF", hours: "~26 hours", labs: "6 hands-on labs + capstone" },
+    course2: { label: "Course 2", title: "AI Compliance & Governance Frameworks", color: "#4CAF50", hours: "20-24 hours", labs: "7 hands-on labs + capstone" },
+    course3: { label: "Course 3", title: "Operating & Securing AI in Production", color: "#64C8FF", hours: "20-24 hours", labs: "7 hands-on labs + capstone" },
+    course4: { label: "Course 4", title: "AI Governance for Engineers", color: "#F59E0B", hours: "~12 hours", labs: "3 hands-on labs" },
   };
   const modules = moduleMap[activeTab];
   const courseInfo = infoMap[activeTab];
@@ -542,54 +542,58 @@ function CurriculumSection() {
     <section id="curriculum" className="section-dark py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 reveal">
-          <p className="text-sm font-medium tracking-[4px] uppercase text-[#0D7377] mb-4">Curriculum</p>
+          <p className="text-base md:text-lg font-bold tracking-[4px] uppercase text-[#2DD4BF] mb-4">Curriculum</p>
           <h2 className="font-['Playfair_Display',serif] text-4xl md:text-5xl font-bold text-white mb-6">
-            16 Modules. 16 Labs. Two <span className="text-[#0D7377]">Certifications</span>.
+            IAM for Agentic AI <span className="text-white/40">&middot;</span> 8 Modules <span className="text-white/40">&middot;</span> <span className="text-[#2DD4BF]">6 Labs + Capstone</span>
           </h2>
         </div>
 
         {/* Tab switcher */}
         <div className="flex justify-center mb-12">
-          <div className="inline-flex rounded-xl border border-white/10 bg-white/[0.02] p-1">
+          <div className="inline-flex flex-wrap justify-center rounded-xl border border-white/10 bg-white/[0.02] p-1 gap-1">
             <button
               onClick={() => setActiveTab("course1")}
-              className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+              className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all flex flex-col items-center leading-tight ${
                 activeTab === "course1"
-                  ? "bg-[#0D7377]/20 text-[#0D7377] border border-[#0D7377]/30"
-                  : "text-white/80 hover:text-white/60 border border-transparent"
+                  ? "bg-[#2DD4BF]/20 text-white border border-[#2DD4BF]"
+                  : "text-white hover:text-white border border-transparent"
               }`}
             >
-              Course 1: IAM for Agentic AI
+              <span>Course 1: IAM for Agentic AI</span>
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#2DD4BF] mt-1">Available Now</span>
             </button>
             <button
               onClick={() => setActiveTab("course2")}
-              className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+              className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all flex flex-col items-center leading-tight ${
                 activeTab === "course2"
-                  ? "bg-[#4CAF50]/15 text-[#4CAF50] border border-[#4CAF50]/30"
-                  : "text-white/80 hover:text-white/60 border border-transparent"
+                  ? "bg-[#4CAF50]/15 text-[#4CAF50] border border-[#4CAF50]"
+                  : "text-[#4CAF50] hover:text-[#4CAF50] border border-transparent"
               }`}
             >
-              Course 2: AI Compliance & Governance
+              <span>Course 2: AI Compliance & Governance</span>
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#4CAF50] mt-1">Coming Soon</span>
             </button>
             <button
               onClick={() => setActiveTab("course3")}
-              className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+              className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all flex flex-col items-center leading-tight ${
                 activeTab === "course3"
-                  ? "bg-[#64C8FF]/15 text-[#64C8FF] border border-[#64C8FF]/30"
-                  : "text-white/80 hover:text-white/60 border border-transparent"
+                  ? "bg-[#64C8FF]/15 text-[#64C8FF] border border-[#64C8FF]"
+                  : "text-[#64C8FF] hover:text-[#64C8FF] border border-transparent"
               }`}
             >
-              Course 3: AI Security Ops <span className="text-[10px] opacity-50 ml-1">Coming Soon</span>
+              <span>Course 3: AI Security Ops</span>
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#64C8FF] mt-1">Coming Soon</span>
             </button>
             <button
               onClick={() => setActiveTab("course4")}
-              className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+              className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all flex flex-col items-center leading-tight ${
                 activeTab === "course4"
-                  ? "bg-[#F59E0B]/15 text-[#F59E0B] border border-[#F59E0B]/30"
-                  : "text-white/80 hover:text-white/60 border border-transparent"
+                  ? "bg-[#F59E0B]/15 text-[#F59E0B] border border-[#F59E0B]"
+                  : "text-[#F59E0B] hover:text-[#F59E0B] border border-transparent"
               }`}
             >
-              Course 4: AI Governance for Engineers
+              <span>Course 4: AI Governance for Engineers</span>
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#F59E0B] mt-1">Coming Soon</span>
             </button>
           </div>
         </div>
@@ -598,7 +602,7 @@ function CurriculumSection() {
         <div className="mb-8 text-center">
           <p className="text-xs tracking-wider uppercase font-medium mb-1" style={{ color: courseInfo.color }}>{courseInfo.label}</p>
           <p className="text-xl text-white font-semibold font-['Playfair_Display',serif]">{courseInfo.title}</p>
-          <p className="text-sm text-white/75 mt-1">8 modules &bull; {courseInfo.hours} &bull; 8 hands-on labs &bull; Certification exam</p>
+          <p className="text-sm text-white/75 mt-1">8 modules &bull; {courseInfo.hours} &bull; {courseInfo.labs} &bull; Certification exam</p>
         </div>
 
         {/* Modules list */}
@@ -800,7 +804,7 @@ function RoadmapSection() {
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Deep and narrow: identity & access management for autonomous AI agents, non-human identities, and Zero Trust.
             </p>
-            <p className="text-xs text-white">8 modules &bull; 24-32 hrs &bull; 8 labs &bull; IAM specialty badge</p>
+            <p className="text-xs text-white">8 modules &bull; ~26 hrs &bull; 6 labs + capstone &bull; IAM badge</p>
           </div>
 
           {/* Course 2 - Available */}
@@ -814,7 +818,7 @@ function RoadmapSection() {
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Broad and comprehensive: EU AI Act, ISO 42001, NIST AI RMF, bias, model risk, and enterprise-wide AI governance.
             </p>
-            <p className="text-xs text-white">8 modules &bull; 20-24 hrs &bull; 8 labs &bull; GRC specialty badge</p>
+            <p className="text-xs text-white">8 modules &bull; 20-24 hrs &bull; 7 labs + capstone &bull; GRC badge</p>
           </div>
 
           {/* Course 3 - Coming in May */}
@@ -828,7 +832,7 @@ function RoadmapSection() {
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Day-to-day operations: shadow AI control, user education, agent security, supply chain, monitoring, and incident response.
             </p>
-            <p className="text-xs text-white">8 modules &bull; 20-24 hrs &bull; 8 labs &bull; Security Ops specialty badge</p>
+            <p className="text-xs text-white">8 modules &bull; 20-24 hrs &bull; 7 labs + capstone &bull; Security Ops badge</p>
           </div>
 
           {/* Course 4 - Launching May 1 */}
