@@ -902,7 +902,7 @@ function CTASection() {
           {/* Course 1 - Sign up button (active) */}
           <div className="mb-10">
             <a
-              href="#"
+              href="mailto:aiaware@aiawarecertified.com?subject=Sign%20Up%20%E2%80%94%20Course%201%3A%20IAM%20for%20the%20Agentic%20AI%20Era&body=Hi%2C%0A%0AI%27d%20like%20to%20sign%20up%20for%20Course%201%20(IAM%20for%20the%20Agentic%20AI%20Era)%20at%20the%20%24597%20founding%20rate.%0A%0AName%3A%20%0ACompany%2FRole%3A%20%0A%0AThanks%21"
               className="btn-primary inline-block !px-8 !py-4 !text-base"
             >
               Sign Up for Course 1 &mdash; $597 by May 15
@@ -924,9 +924,23 @@ function CTASection() {
             <p className="text-sm font-semibold text-white/85 mb-3">
               Join the waitlist for Courses 2, 3, &amp; 4
             </p>
-            <form onSubmit={(e) => { e.preventDefault(); }} className="flex flex-col sm:flex-row gap-3">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                const email = e.currentTarget.elements.namedItem('waitlistEmail').value;
+                if (!email) return;
+                const subject = encodeURIComponent('Waitlist — Courses 2, 3, & 4');
+                const body = encodeURIComponent(
+                  `Please add me to the waitlist for the upcoming AI Aware Certified courses (Courses 2, 3, & 4).\n\nEmail: ${email}\n\nThanks!`
+                );
+                window.location.href = `mailto:aiaware@aiawarecertified.com?subject=${subject}&body=${body}`;
+              }}
+              className="flex flex-col sm:flex-row gap-3"
+            >
               <input
                 type="email"
+                name="waitlistEmail"
+                required
                 placeholder="Enter your email"
                 className="flex-1 px-5 py-3.5 rounded-lg bg-white/[0.05] border border-white/10 text-white placeholder-white/30 outline-none focus:border-[#0D7377] transition-colors font-['DM_Sans',sans-serif]"
               />
@@ -935,7 +949,7 @@ function CTASection() {
               </button>
             </form>
             <p className="text-xs text-white/60 mt-4">
-              Get notified when Compliance &amp; Governance, Operating &amp; Securing AI, and Governance for Engineers launch in May. No spam, ever.
+              Get notified when Compliance &amp; Governance, Operating &amp; Securing AI, and Governance for Engineers launch in May. Opens your email app to confirm. No spam, ever.
             </p>
           </div>
         </div>
