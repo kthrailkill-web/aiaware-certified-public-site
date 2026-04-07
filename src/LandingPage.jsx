@@ -256,7 +256,7 @@ function HeroSection() {
         </h1>
 
         <p className="tagline text-base md:text-lg font-light text-white/85 text-center mb-3 max-w-3xl" style={{ letterSpacing: '1px' }}>
-          Three practitioner-built certification tracks for the agentic AI era
+          Four practitioner-built certification tracks for the agentic AI era
         </p>
         <p className="text-sm text-white/75 text-center mb-10 max-w-2xl">
           Identity + Governance + Operations &bull; EU AI Act + ISO 42001 + NIST AI RMF + MLSecOps
@@ -269,8 +269,8 @@ function HeroSection() {
 
         <div className="stat-pills flex flex-wrap justify-center gap-4">
           {[
-            { color: "#0D7377", label: "2 Tracks Live + 1 Coming" },
-            { color: "#4CAF50", label: "16 Modules / 50+ Hours" },
+            { color: "#2DD4BF", label: "1 Course Live + 3 Coming in May" },
+            { color: "#4CAF50", label: "Course 1: 8 Modules \u00B7 ~26 Hours" },
             { color: "#64C8FF", label: "Hands-On Labs in Every Module" },
           ].map((pill) => (
             <div key={pill.label} className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-sm">
@@ -317,7 +317,7 @@ function CoursesOverviewSection() {
     <section id="courses" className="section-darker py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 reveal">
-          <p className="text-sm font-medium tracking-[4px] uppercase text-[#4CAF50] mb-4">Three Tracks, One Credential</p>
+          <p className="text-sm font-medium tracking-[4px] uppercase text-[#4CAF50] mb-4">Four Tracks, One Credential</p>
           <h2 className="font-['Playfair_Display',serif] text-4xl md:text-5xl font-bold text-white mb-6">
             The <span className="text-[#0D7377]">AI Aware Certified</span> Trilogy
           </h2>
