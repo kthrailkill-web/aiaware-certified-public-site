@@ -69,7 +69,7 @@ const PRICING = [
     track: "Build",
     price: "$597",
     originalPrice: "$697",
-    per: "Early Release \u2014 Mid April",
+    per: "Early Release \u2014 Coming in May",
     features: [
       "8 modules \u2022 ~26 hours",
       "6 hands-on labs + capstone",
@@ -80,7 +80,7 @@ const PRICING = [
     cta: "Join Waitlist",
     state: "live",
     color: "#2DD4BF",
-    badge: "Early Release: Mid April",
+    badge: "Early Release: Coming in May",
     note: "$597 Early Release Rate \u2014 30 days from launch",
     href: buildMailto(
       "AI Aware Certified Course 1 Early Release Waitlist",
@@ -341,9 +341,10 @@ function HeroSection() {
 
         <div className="stat-pills flex flex-wrap justify-center gap-4">
           {[
-            { color: "#2DD4BF", label: "1 Course Live + 3 Coming in May" },
-            { color: "#4CAF50", label: "Course 1: 8 Modules \u00B7 ~26 Hours" },
+            { color: "#2DD4BF", label: "Course 1: IAM for the Agentic AI Era" },
+            { color: "#4CAF50", label: "8 Modules \u00B7 ~26 Hours" },
             { color: "#64C8FF", label: "Hands-On Labs in Every Module" },
+            { color: "#F59E0B", label: "Coming Soon: Compliance \u00B7 Operations \u00B7 Engineering" },
           ].map((pill) => (
             <div key={pill.label} className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-sm">
               <div className="w-2 h-2 rounded-full" style={{ background: pill.color, boxShadow: `0 0 8px ${pill.color}80` }} />
@@ -391,18 +392,19 @@ function CoursesOverviewSection() {
         <div className="text-center mb-16 reveal">
           <p className="text-sm font-medium tracking-[4px] uppercase text-[#4CAF50] mb-4">Four Tracks, One Credential</p>
           <h2 className="font-['Playfair_Display',serif] text-4xl md:text-5xl font-bold text-white mb-6">
-            The <span className="text-[#0D7377]">AI Aware Certified</span> Trilogy
+            The Complete <span className="text-[#0D7377]">AI Aware Certified</span> Program
           </h2>
           <p className="text-lg text-white/85 max-w-3xl mx-auto">
             Build the identity layer. Govern the compliance framework. Operate it securely every day.
-            Complete all three to earn the full AI Aware Certified&#8482; Professional designation.
+            Engineer compliance into the system. Complete all four to earn the full
+            AI Aware Certified&#8482; Professional designation.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {/* Course 1 */}
           <div className="reveal rounded-2xl border border-[#0D7377]/30 bg-gradient-to-b from-[rgba(13,115,119,0.08)] to-transparent p-8 relative">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full border border-[#2DD4BF]/40 bg-[#2DD4BF]/10">
-              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-medium">Early Release &middot; Mid April</span>
+              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-medium">Early Release &middot; Coming in May</span>
             </div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-[#0D7377]/15 border border-[#0D7377]/30 flex items-center justify-center">
@@ -484,7 +486,7 @@ function CoursesOverviewSection() {
                 "AI Aware Certified Course 2 Waitlist",
                 "Hi,\n\nI'd like to join the waitlist for Course 2: AI Compliance & Governance Frameworks. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
               )} className="btn-outline !py-2 !px-5 !text-sm !border-[#4CAF50]/40 !text-[#4CAF50]">Join Waitlist</a>
-              <span className="text-sm text-white/75">Releasing in May</span>
+              <span className="text-sm text-white/75">Coming Soon</span>
             </div>
           </div>
 
@@ -528,7 +530,7 @@ function CoursesOverviewSection() {
                 "AI Aware Certified Course 3 Waitlist",
                 "Hi,\n\nI'd like to join the waitlist for Course 3: Operating & Securing AI in Production. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
               )} className="btn-outline !py-2 !px-5 !text-sm !border-[#64C8FF]/40 !text-[#64C8FF]">Join Waitlist</a>
-              <span className="text-sm text-white/75">Releasing in May</span>
+              <span className="text-sm text-white/75">Coming Soon</span>
             </div>
           </div>
 
@@ -573,7 +575,7 @@ function CoursesOverviewSection() {
                 "AI Aware Certified Course 4 Waitlist",
                 "Hi,\n\nI'd like to join the waitlist for Course 4: AI Governance for Engineers. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
               )} className="btn-outline !py-2 !px-5 !text-sm !border-[#F59E0B]/40 !text-[#F59E0B]">Join Waitlist</a>
-              <span className="text-sm text-white/75">Releasing in May</span>
+              <span className="text-sm text-white/75">Coming Soon</span>
             </div>
           </div>
         </div>
@@ -594,11 +596,22 @@ function CoursesOverviewSection() {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <div>
-                <span className="text-lg text-white/75 line-through mr-2">$3,088</span>
-                <span className="text-2xl font-bold text-white font-['Playfair_Display',serif]">$1,997</span>
+              <div className="flex flex-col items-end">
+                <div>
+                  <span className="text-lg text-white/75 line-through mr-2">$3,088</span>
+                  <span className="text-2xl font-bold text-white font-['Playfair_Display',serif]">$1,997</span>
+                </div>
+                <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-medium mt-1">Early Release Program</span>
               </div>
-              <a href="#pricing" className="btn-primary !py-2 !px-5 !text-sm">Get Everything</a>
+              <a
+                href={buildMailto(
+                  "AI Aware Certified Complete Program Waitlist",
+                  "Hi,\n\nI'd like to join the waitlist for the Complete Program (all 4 courses for $1,997 Early Release Program). Please notify me as each course launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
+                )}
+                className="btn-primary !py-2 !px-5 !text-sm"
+              >
+                Join Waitlist
+              </a>
             </div>
           </div>
         </div>
@@ -641,7 +654,7 @@ function CurriculumSection() {
               }`}
             >
               <span>Course 1: IAM for Agentic AI</span>
-              <span className="text-[10px] tracking-widest uppercase font-bold text-[#2DD4BF] mt-1">Early Release: Mid April</span>
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#2DD4BF] mt-1">Early Release: Coming in May</span>
             </button>
             <button
               onClick={() => setActiveTab("course2")}
@@ -730,16 +743,19 @@ function CoursePhilosophySection() {
               Built by a Practitioner, Not a Vendor
             </h3>
             <p className="text-white/85 mb-6 leading-relaxed">
-              Every module reflects real enterprise deployments — not theoretical frameworks
-              or vendor marketing. This curriculum is built on 20+ years of IAM domain expertise
-              across enterprise identity programs at scale.
+              Every module reflects real enterprise deployments &mdash; not theoretical frameworks
+              or vendor marketing. This curriculum was built by a practitioner who has personally
+              led the transition from legacy human-identity IAM to agentic AI identity governance
+              at production scale, inside an AI-first identity security company. The same playbook
+              used to rebuild enterprise identity programs for the agentic era is the playbook this
+              course teaches. Real experience. Real scars. Real frameworks that work.
             </p>
             <div className="space-y-3">
               {[
                 "Drawn from real-world implementations across IT, cybersecurity, technology, manufacturing, HR, healthcare, and higher education",
                 "Vendor-neutral — covers the full landscape without favoring any single platform",
-                "Practitioner-tested frameworks you can apply on day one",
-                "Updated for 2026 with MCP, agentic AI, and the latest regulatory requirements",
+                "Production-tested frameworks you can apply on day one",
+                "Updated continuously as the agentic era evolves \u2014 MCP, A2A protocols, evolving NHI taxonomy, and the latest regulatory frameworks (EU AI Act, ISO 42001, NIST AI RMF)",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <svg className="w-4 h-4 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none">
@@ -800,7 +816,7 @@ function PricingSection() {
           </h2>
           <p className="text-lg text-white/80">
             Individual courses, the advanced engineering track, or the complete program.
-            Course 1 launches mid April with a 30-day Early Release Rate at $597 &mdash; join the waitlist to lock it in.
+            Course 1 launches in May with a 30-day Early Release Rate at $597 &mdash; join the waitlist to lock it in.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -924,10 +940,10 @@ function RoadmapSection() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Course 1 - Early Release Mid April */}
+          {/* Course 1 - Early Release Coming in May */}
           <div className="reveal rounded-2xl border-2 border-[#2DD4BF] bg-gradient-to-b from-[rgba(45,212,191,0.10)] to-transparent p-8 relative shadow-[0_0_24px_-8px_rgba(45,212,191,0.5)]">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#2DD4BF]/15 border border-[#2DD4BF]/40">
-              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-bold">Early Release: Mid April</span>
+              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-bold">Early Release: Coming in May</span>
             </div>
             <div className="text-4xl font-bold text-[#2DD4BF]/30 font-['Playfair_Display',serif] mb-4">01</div>
             <p className="text-xs text-[#2DD4BF] tracking-wider uppercase font-medium mb-2">Build</p>
@@ -1030,7 +1046,7 @@ function CTASection() {
             Secure the Future of <span className="text-[#0D7377]">AI</span>
           </h2>
           <p className="text-lg text-white/85 mb-10 max-w-xl mx-auto">
-            Course 1 (IAM for the Agentic AI Era) launches mid April with a 30-day Early Release Rate at $597.
+            Course 1 (IAM for the Agentic AI Era) launches in May with a 30-day Early Release Rate at $597.
             Courses 2, 3, and 4 launch in May. Join the waitlist below to be notified when each goes live.
           </p>
 
@@ -1043,7 +1059,7 @@ function CTASection() {
               Join Course 1 Waitlist &mdash; $597 Early Release Rate
             </a>
             <p className="text-xs text-white/70 mt-3">
-              Course 1: IAM for the Agentic AI Era &middot; Early Release Mid April
+              Course 1: IAM for the Agentic AI Era &middot; Early Release Coming in May
             </p>
           </div>
 
