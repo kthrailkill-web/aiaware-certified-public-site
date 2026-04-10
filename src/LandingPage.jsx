@@ -65,10 +65,10 @@ const buildMailto = (subject, body) =>
 // As courses launch, flip their state from "waitlist" to "live".
 const PRICING = [
   {
-    tier: "Course 1: IAM",
+    tier: "Course 1: IAM for the Agentic AI Era",
     track: "Build",
-    price: "$597",
-    originalPrice: "$697",
+    price: "$797",
+    originalPrice: "$997",
     per: "Early Release \u2014 Coming in May",
     features: [
       "8 modules \u2022 ~26 hours",
@@ -77,21 +77,21 @@ const PRICING = [
       "12 months course access",
       "Permanent credential verification",
     ],
-    cta: "Join Waitlist",
+    cta: "Notify Me at Launch",
     state: "live",
     color: "#2DD4BF",
     badge: "Early Release: Coming in May",
-    note: "$597 Early Release Rate \u2014 30 days from launch",
+    note: "$797 Early Release Rate \u2014 30 days from launch",
     href: buildMailto(
-      "AI Aware Certified Course 1 Early Release Waitlist",
-      "Hi,\n\nI'd like to join the waitlist for Course 1: IAM for the Agentic AI Era. Please notify me when it launches so I can lock in the $597 Early Release Rate.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
+      "Course 1 Launch Notification Request \u2014 IAM for the Agentic AI Era",
+      "Hi,\n\nPlease notify me when Course 1: IAM for the Agentic AI Era launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
     ),
   },
   {
-    tier: "Course 2: Compliance",
+    tier: "Course 2: AI Compliance & Governance Frameworks",
     track: "Govern",
-    price: "$697",
-    per: "Coming in May",
+    price: "TBD",
+    per: "Pricing announced at launch",
     features: [
       "8 modules \u2022 20-24 hours",
       "7 hands-on labs + capstone",
@@ -99,19 +99,19 @@ const PRICING = [
       "12 months course access",
       "Permanent credential verification",
     ],
-    cta: "Join Waitlist",
+    cta: "Notify Me at Launch",
     state: "waitlist",
     color: "#4CAF50",
     href: buildMailto(
-      "AI Aware Certified Course 2 Waitlist",
-      "Hi,\n\nI'd like to join the waitlist for Course 2: AI Compliance & Governance Frameworks. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
+      "Course 2 Launch Notification Request \u2014 AI Compliance & Governance Frameworks",
+      "Hi,\n\nPlease notify me when Course 2: AI Compliance & Governance Frameworks launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
     ),
   },
   {
-    tier: "Course 3: Operations",
+    tier: "Course 3: Operating & Securing AI in Production",
     track: "Operate",
-    price: "$697",
-    per: "Coming in May",
+    price: "TBD",
+    per: "Pricing announced at launch",
     features: [
       "8 modules \u2022 20-24 hours",
       "7 hands-on labs + capstone",
@@ -119,19 +119,19 @@ const PRICING = [
       "12 months course access",
       "Permanent credential verification",
     ],
-    cta: "Join Waitlist",
+    cta: "Notify Me at Launch",
     state: "waitlist",
     color: "#64C8FF",
     href: buildMailto(
-      "AI Aware Certified Course 3 Waitlist",
-      "Hi,\n\nI'd like to join the waitlist for Course 3: Operating & Securing AI in Production. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
+      "Course 3 Launch Notification Request \u2014 Operating & Securing AI in Production",
+      "Hi,\n\nPlease notify me when Course 3: Operating & Securing AI in Production launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
     ),
   },
   {
-    tier: "Course 4: Engineering",
+    tier: "Course 4: AI Governance for Engineers",
     track: "Engineer",
-    price: "$997",
-    per: "Coming in May",
+    price: "TBD",
+    per: "Pricing announced at launch",
     features: [
       "8 modules \u2022 ~12 hours",
       "3 advanced labs + capstone",
@@ -139,39 +139,37 @@ const PRICING = [
       "12 months course access",
       "Permanent credential verification",
     ],
-    cta: "Join Waitlist",
+    cta: "Notify Me at Launch",
     state: "waitlist",
     color: "#F59E0B",
     href: buildMailto(
-      "AI Aware Certified Course 4 Waitlist",
-      "Hi,\n\nI'd like to join the waitlist for Course 4: AI Governance for Engineers. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
+      "Course 4 Launch Notification Request \u2014 AI Governance for Engineers",
+      "Hi,\n\nPlease notify me when Course 4: AI Governance for Engineers launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
     ),
   },
   {
     tier: "Complete Program",
-    price: "$1,997",
-    originalPrice: "$3,088",
+    price: "TBD",
     per: "All 4 Courses",
     features: [
       "All 4 courses (75+ hours)",
       "32 modules + all hands-on labs",
       "Comprehensive certification exam",
       'Full "AI Aware Certified\u2122 Professional" designation',
-      "Save $1,091",
     ],
-    cta: "Join Waitlist",
+    cta: "Notify Me at Launch",
     state: "waitlist",
     color: "#0D7377",
-    badge: "Best Value",
-    note: "All 4 courses \u2014 launches as each course goes live",
+    badge: "BEST Value Coming",
+    note: "Bundle pricing announced as each course goes live",
     href: buildMailto(
-      "AI Aware Certified Complete Program Waitlist",
-      "Hi,\n\nI'd like to join the waitlist for the Complete Program (all 4 courses for $1,997). Please notify me as each course launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
+      "Complete Program Launch Notification Request \u2014 AI Aware Certified",
+      "Hi,\n\nPlease notify me when the AI Aware Certified Complete Program (all 4 courses) launches with full pricing.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
     ),
   },
   {
     tier: "Enterprise",
-    price: "Custom",
+    price: "TBD",
     per: "Team Licensing",
     features: [
       "Team licensing (10+)",
@@ -204,7 +202,7 @@ function NavBar() {
         <a href="#curriculum" className="text-sm text-white/85 hover:text-white/90 transition-colors">Curriculum</a>
         <a href="#pricing" className="text-sm text-white/85 hover:text-white/90 transition-colors">Pricing</a>
         <a href="#roadmap" className="text-sm text-white/85 hover:text-white/90 transition-colors">Roadmap</a>
-        <a href="#contact" className="btn-primary !py-2 !px-5 !text-sm">Get Started</a>
+        <a href="#contact" className="btn-primary !py-2 !px-5 !text-sm">Contact Us</a>
       </div>
     </nav>
   );
@@ -439,8 +437,8 @@ function CoursesOverviewSection() {
             <div className="flex items-center gap-4 flex-wrap">
               <a href="#curriculum" className="btn-primary !py-2 !px-5 !text-sm">View Modules</a>
               <span className="text-sm text-white/85">
-                <span className="text-white/50 line-through mr-1">$697</span>
-                <span className="text-[#2DD4BF] font-semibold">$597</span>
+                <span className="text-white/50 line-through mr-1">$997</span>
+                <span className="text-[#2DD4BF] font-semibold">$797</span>
                 <span className="text-white/75"> &mdash; Early Release Rate, 30 days from launch</span>
               </span>
             </div>
@@ -483,9 +481,9 @@ function CoursesOverviewSection() {
             </div>
             <div className="flex items-center gap-4">
               <a href={buildMailto(
-                "AI Aware Certified Course 2 Waitlist",
-                "Hi,\n\nI'd like to join the waitlist for Course 2: AI Compliance & Governance Frameworks. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
-              )} className="btn-outline !py-2 !px-5 !text-sm !border-[#4CAF50]/40 !text-[#4CAF50]">Join Waitlist</a>
+                "Course 2 Launch Notification Request \u2014 AI Compliance & Governance Frameworks",
+                "Hi,\n\nPlease notify me when Course 2: AI Compliance & Governance Frameworks launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
+              )} className="btn-outline !py-2 !px-5 !text-sm !border-[#4CAF50]/40 !text-[#4CAF50]">Notify Me at Launch</a>
               <span className="text-sm text-white/75">Coming Soon</span>
             </div>
           </div>
@@ -527,9 +525,9 @@ function CoursesOverviewSection() {
             </div>
             <div className="flex items-center gap-4">
               <a href={buildMailto(
-                "AI Aware Certified Course 3 Waitlist",
-                "Hi,\n\nI'd like to join the waitlist for Course 3: Operating & Securing AI in Production. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
-              )} className="btn-outline !py-2 !px-5 !text-sm !border-[#64C8FF]/40 !text-[#64C8FF]">Join Waitlist</a>
+                "Course 3 Launch Notification Request \u2014 Operating & Securing AI in Production",
+                "Hi,\n\nPlease notify me when Course 3: Operating & Securing AI in Production launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
+              )} className="btn-outline !py-2 !px-5 !text-sm !border-[#64C8FF]/40 !text-[#64C8FF]">Notify Me at Launch</a>
               <span className="text-sm text-white/75">Coming Soon</span>
             </div>
           </div>
@@ -572,9 +570,9 @@ function CoursesOverviewSection() {
             </div>
             <div className="flex items-center gap-4">
               <a href={buildMailto(
-                "AI Aware Certified Course 4 Waitlist",
-                "Hi,\n\nI'd like to join the waitlist for Course 4: AI Governance for Engineers. Please notify me when it launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
-              )} className="btn-outline !py-2 !px-5 !text-sm !border-[#F59E0B]/40 !text-[#F59E0B]">Join Waitlist</a>
+                "Course 4 Launch Notification Request \u2014 AI Governance for Engineers",
+                "Hi,\n\nPlease notify me when Course 4: AI Governance for Engineers launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
+              )} className="btn-outline !py-2 !px-5 !text-sm !border-[#F59E0B]/40 !text-[#F59E0B]">Notify Me at Launch</a>
               <span className="text-sm text-white/75">Coming Soon</span>
             </div>
           </div>
@@ -592,25 +590,22 @@ function CoursesOverviewSection() {
               </div>
               <div>
                 <p className="text-white font-semibold">Complete Program: All Four Courses</p>
-                <p className="text-sm text-white/80">Identity + Governance + Operations + Engineering &bull; Save $1,091</p>
+                <p className="text-sm text-white/80">Identity + Governance + Operations + Engineering</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex flex-col items-end">
-                <div>
-                  <span className="text-lg text-white/75 line-through mr-2">$3,088</span>
-                  <span className="text-2xl font-bold text-white font-['Playfair_Display',serif]">$1,997</span>
-                </div>
-                <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-medium mt-1">Early Release Program</span>
+                <span className="text-2xl font-bold text-white font-['Playfair_Display',serif]">TBD</span>
+                <span className="text-[10px] text-white/60 tracking-widest uppercase font-medium mt-1">Pricing Coming Soon</span>
               </div>
               <a
                 href={buildMailto(
-                  "AI Aware Certified Complete Program Waitlist",
-                  "Hi,\n\nI'd like to join the waitlist for the Complete Program (all 4 courses for $1,997 Early Release Program). Please notify me as each course launches.\n\nName:\nCompany / Role:\nNotes:\n\nThanks!"
+                  "Complete Program Launch Notification Request \u2014 AI Aware Certified",
+                  "Hi,\n\nPlease notify me when the AI Aware Certified Complete Program (all 4 courses) launches with full pricing.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
                 )}
                 className="btn-primary !py-2 !px-5 !text-sm"
               >
-                Join Waitlist
+                Notify Me at Launch
               </a>
             </div>
           </div>
@@ -816,7 +811,7 @@ function PricingSection() {
           </h2>
           <p className="text-lg text-white/80">
             Individual courses, the advanced engineering track, or the complete program.
-            Course 1 launches in May with a 30-day Early Release Rate at $597 &mdash; join the waitlist to lock it in.
+            Course 1 launches in May with a 30-day Early Release Rate at $797 &mdash; join the launch notification list to lock it in.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -876,7 +871,7 @@ function PricingSection() {
                 <p className="text-xs text-white/85 mb-4">{p.per}</p>
                 <div className="mb-6">
                   {p.originalPrice && (
-                    <span className="text-lg text-white/60 line-through mr-3 font-['Playfair_Display',serif]">
+                    <span className="text-4xl font-bold text-white/60 line-through mr-3 font-['Playfair_Display',serif]">
                       {p.originalPrice}
                     </span>
                   )}
@@ -900,20 +895,22 @@ function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={p.href || "#contact"}
-                  className="text-center font-semibold py-3 px-6 rounded-lg transition-all"
-                  style={buttonStyle}
-                >
-                  {p.cta}
-                </a>
                 {p.note && (
                   <p
-                    className="text-xs text-center mt-3 font-medium"
+                    className="text-xs text-center mb-3 font-medium"
                     style={{ color: isLive ? p.color : "rgba(255,255,255,0.75)" }}
                   >
                     {p.note}
                   </p>
+                )}
+                {p.cta && (
+                  <a
+                    href={p.href || "#contact"}
+                    className="text-center font-semibold py-3 px-6 rounded-lg transition-all"
+                    style={buttonStyle}
+                  >
+                    {p.cta}
+                  </a>
                 )}
               </div>
             );
@@ -954,10 +951,10 @@ function RoadmapSection() {
             <p className="text-xs text-white">8 modules &bull; ~26 hrs &bull; 6 labs + capstone &bull; IAM badge</p>
           </div>
 
-          {/* Course 2 - Available */}
+          {/* Course 2 - Coming Soon */}
           <div className="reveal rounded-2xl border-2 border-[#4CAF50] bg-gradient-to-b from-[rgba(76,175,80,0.06)] to-transparent p-8 relative shadow-[0_0_24px_-8px_rgba(76,175,80,0.5)]">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#4CAF50]/15 border border-[#4CAF50]/25">
-              <span className="text-[10px] text-[#4CAF50] tracking-widest uppercase font-medium">Coming in May</span>
+              <span className="text-[10px] text-[#4CAF50] tracking-widest uppercase font-medium">Coming Soon</span>
             </div>
             <div className="text-4xl font-bold text-[#4CAF50]/20 font-['Playfair_Display',serif] mb-4">02</div>
             <p className="text-xs text-[#4CAF50] tracking-wider uppercase font-medium mb-2">Govern</p>
@@ -968,10 +965,10 @@ function RoadmapSection() {
             <p className="text-xs text-white">8 modules &bull; 20-24 hrs &bull; 7 labs + capstone &bull; GRC badge</p>
           </div>
 
-          {/* Course 3 - Coming in May */}
+          {/* Course 3 - Coming Soon */}
           <div className="reveal rounded-2xl border-2 border-[#64C8FF] bg-gradient-to-b from-[rgba(100,200,255,0.06)] to-transparent p-8 relative overflow-hidden shadow-[0_0_24px_-8px_rgba(100,200,255,0.5)]">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full border border-[#64C8FF]/30 bg-[#64C8FF]/10">
-              <span className="text-[10px] text-[#64C8FF] tracking-widest uppercase font-medium">Coming in May</span>
+              <span className="text-[10px] text-[#64C8FF] tracking-widest uppercase font-medium">Coming Soon</span>
             </div>
             <div className="text-4xl font-bold text-[#64C8FF]/20 font-['Playfair_Display',serif] mb-4">03</div>
             <p className="text-xs text-[#64C8FF] tracking-wider uppercase font-medium mb-2">Operate</p>
@@ -982,10 +979,10 @@ function RoadmapSection() {
             <p className="text-xs text-white">8 modules &bull; 20-24 hrs &bull; 7 labs + capstone &bull; Security Ops badge</p>
           </div>
 
-          {/* Course 4 - Launching May 1 */}
+          {/* Course 4 - Coming Soon */}
           <div className="reveal rounded-2xl border-2 border-[#F59E0B] bg-gradient-to-b from-[rgba(245,158,11,0.06)] to-transparent p-8 relative shadow-[0_0_24px_-8px_rgba(245,158,11,0.5)]">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#F59E0B]/15 border border-[#F59E0B]/25">
-              <span className="text-[10px] text-[#F59E0B] tracking-widest uppercase font-medium">Coming in May</span>
+              <span className="text-[10px] text-[#F59E0B] tracking-widest uppercase font-medium">Coming Soon</span>
             </div>
             <div className="text-4xl font-bold text-[#F59E0B]/20 font-['Playfair_Display',serif] mb-4">04</div>
             <p className="text-xs text-[#F59E0B] tracking-wider uppercase font-medium mb-2">Engineer</p>
@@ -1046,62 +1043,38 @@ function CTASection() {
             Secure the Future of <span className="text-[#0D7377]">AI</span>
           </h2>
           <p className="text-lg text-white/85 mb-10 max-w-xl mx-auto">
-            Course 1 (IAM for the Agentic AI Era) launches in May with a 30-day Early Release Rate at $597.
-            Courses 2, 3, and 4 launch in May. Join the waitlist below to be notified when each goes live.
+            Course 1 (IAM for the Agentic AI Era) launches in May with a 30-day Early Release Rate at $797.
+            Courses 2, 3, and 4 launching soon after Course 1. Get notified when courses are released and you can register.
           </p>
 
-          {/* Course 1 - Sign up button (active) */}
+          {/* Course 1 - Notify Me at Launch button */}
           <div className="mb-10">
             <a
-              href="mailto:aiaware@aiawarecertified.com?subject=Join%20Waitlist%20%E2%80%94%20Course%201%3A%20IAM%20for%20the%20Agentic%20AI%20Era&body=Hi%2C%0A%0AI%27d%20like%20to%20join%20the%20waitlist%20for%20Course%201%20(IAM%20for%20the%20Agentic%20AI%20Era).%20Please%20notify%20me%20when%20it%20launches%20so%20I%20can%20lock%20in%20the%20%24597%20Early%20Release%20Rate.%0A%0AName%3A%20%0ACompany%2FRole%3A%20%0A%0AThanks%21"
+              href={buildMailto(
+                "Course 1 Launch Notification Request \u2014 IAM for the Agentic AI Era",
+                "Hi,\n\nPlease notify me when Course 1: IAM for the Agentic AI Era launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
+              )}
               className="btn-primary inline-block !px-8 !py-4 !text-base"
             >
-              Join Course 1 Waitlist &mdash; $597 Early Release Rate
+              Notify Me at Launch
             </a>
-            <p className="text-xs text-white/70 mt-3">
-              Course 1: IAM for the Agentic AI Era &middot; Early Release Coming in May
-            </p>
           </div>
 
-          {/* Divider */}
-          <div className="flex items-center gap-4 max-w-md mx-auto mb-8">
-            <div className="flex-1 h-px bg-white/10" />
-            <span className="text-xs text-white/50 uppercase tracking-widest">Or</span>
-            <div className="flex-1 h-px bg-white/10" />
-          </div>
-
-          {/* Waitlist for Courses 2, 3, 4 */}
-          <div className="max-w-md mx-auto">
-            <p className="text-sm font-semibold text-white/85 mb-3">
-              Join the waitlist for Courses 2, 3, &amp; 4
+          {/* Contact Us card */}
+          <div id="contact" className="max-w-2xl mx-auto rounded-2xl border border-white/10 bg-white/[0.02] p-8">
+            <p className="text-base text-white/85 leading-relaxed mb-6">
+              Have questions about the curriculum, certification path, or enterprise options?
+              We&rsquo;d love to hear from you.
             </p>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                const email = e.currentTarget.elements.namedItem('waitlistEmail').value;
-                if (!email) return;
-                const subject = encodeURIComponent('Waitlist — Courses 2, 3, & 4');
-                const body = encodeURIComponent(
-                  `Please add me to the waitlist for the upcoming AI Aware Certified courses (Courses 2, 3, & 4).\n\nEmail: ${email}\n\nThanks!`
-                );
-                window.location.href = `mailto:aiaware@aiawarecertified.com?subject=${subject}&body=${body}`;
-              }}
-              className="flex flex-col sm:flex-row gap-3"
+            <a
+              href={buildMailto(
+                "AI Aware Certified \u2014 General Inquiry",
+                "Hi,\n\nI have a question about AI Aware Certified.\n\nName: \nCompany / Role: \nMy question: \n\nThanks!"
+              )}
+              className="btn-outline inline-block !px-6 !py-3"
             >
-              <input
-                type="email"
-                name="waitlistEmail"
-                required
-                placeholder="Enter your email"
-                className="flex-1 px-5 py-3.5 rounded-lg bg-white/[0.05] border border-white/10 text-white placeholder-white/30 outline-none focus:border-[#0D7377] transition-colors font-['DM_Sans',sans-serif]"
-              />
-              <button type="submit" className="btn-outline whitespace-nowrap">
-                Join Waitlist
-              </button>
-            </form>
-            <p className="text-xs text-white/60 mt-4">
-              Get notified when Compliance &amp; Governance, Operating &amp; Securing AI, and Governance for Engineers launch in May. Opens your email app to confirm. No spam, ever.
-            </p>
+              Contact Us
+            </a>
           </div>
         </div>
       </div>
