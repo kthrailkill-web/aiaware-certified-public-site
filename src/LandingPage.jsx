@@ -69,7 +69,7 @@ const PRICING = [
     track: "Build",
     price: "$797",
     originalPrice: "$997",
-    per: "Early Sign-Up Starts May 4 — Class Starts May 14",
+    per: "Class Starts May 14, Early Sign-Up Opens May 4",
     features: [
       "8 modules | 8 labs | Exam",
       "IAM specialty credential",
@@ -79,7 +79,7 @@ const PRICING = [
     cta: "Notify Me at Launch",
     state: "live",
     color: "#2DD4BF",
-    badge: "Early Sign-Up Starts May 4",
+    badge: "Class Starts May 14",
     note: "$797 Early Release Rate — through June 5",
     href: buildMailto(
       "Course 1 Launch Notification Request \u2014 IAM for the Agentic AI Era",
@@ -395,7 +395,7 @@ function CoursesOverviewSection() {
           {/* Course 1 */}
           <div className="reveal rounded-2xl border border-[#0D7377]/30 bg-gradient-to-b from-[rgba(13,115,119,0.08)] to-transparent p-8 relative">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full border border-[#2DD4BF]/40 bg-[#2DD4BF]/10">
-              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-medium">Early Sign-Up Starts May 4</span>
+              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-medium">Class Starts May 14</span>
             </div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-[#0D7377]/15 border border-[#0D7377]/30 flex items-center justify-center">
@@ -633,7 +633,7 @@ function CurriculumSection() {
               }`}
             >
               <span>Course 1: IAM for Agentic AI</span>
-              <span className="text-[10px] tracking-widest uppercase font-bold text-[#2DD4BF] mt-1">Early Sign-Up Starts May 4</span>
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#2DD4BF] mt-1">Class Starts May 14</span>
             </button>
             <button
               onClick={() => setActiveTab("course2")}
@@ -925,10 +925,10 @@ function RoadmapSection() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Course 1 - Early Sign-Up Starts May 4 */}
+          {/* Course 1 - Class Starts May 14 */}
           <div className="reveal rounded-2xl border-2 border-[#2DD4BF] bg-gradient-to-b from-[rgba(45,212,191,0.10)] to-transparent p-8 relative shadow-[0_0_24px_-8px_rgba(45,212,191,0.5)]">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#2DD4BF]/15 border border-[#2DD4BF]/40">
-              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-bold">Early Sign-Up Starts May 4</span>
+              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-bold">Class Starts May 14</span>
             </div>
             <div className="text-4xl font-bold text-[#2DD4BF]/30 font-['Playfair_Display',serif] mb-4">01</div>
             <p className="text-xs text-[#2DD4BF] tracking-wider uppercase font-medium mb-2">Build</p>
