@@ -3,21 +3,21 @@ import "./LandingPage.css";
 
 // ===== DATA =====
 const WHY_NOW_STATS = [
-  { stat: "100:1", label: "Machine-to-human identity ratio across enterprise cloud environments" },
+  { stat: "82:1", label: "Machine-to-human identity ratio across enterprise cloud environments" },
   { stat: "48%", label: "Of cybersecurity pros rank agentic AI as the #1 attack vector for 2026" },
   { stat: "76%", label: "Of organizations report shadow AI problems — up 15% year-over-year" },
   { stat: "$38M", label: "Maximum EU AI Act fine — or 7% of global revenue" },
 ];
 
 const COURSE1_MODULES = [
-  { num: "01", title: "The Identity Revolution", hours: "3 hrs", desc: "How identity replaced the network as the security boundary. Zero Trust as an identity strategy. IAM foundations refreshed for the machine era.", topics: ["The New Perimeter", "IAM Foundations Refreshed", "Identity-First Security", "Identity Landscape Mapping Lab"] },
-  { num: "02", title: "Non-Human Identities Deep Dive", hours: "4 hrs", desc: "Classifying and governing NHIs: service accounts, API keys, tokens, bots, RPA, AI agents, and MCP connections at enterprise scale.", topics: ["NHI Taxonomy & Lifecycle", "Secrets Management", "Privilege Sprawl & Identity Debt", "NHI Discovery & Classification Lab"] },
-  { num: "03", title: "Agentic AI: The New Identity Frontier", hours: "4 hrs", desc: "Provisioning, credentialing, and governing autonomous AI agents. MCP protocols, shadow AI detection, and prompt injection defense.", topics: ["Agent Identity Architecture", "MCP & Agent Protocols", "Shadow AI & Rogue Agents", "Securing Agent Workflows Lab"] },
-  { num: "04", title: "Zero Trust for Human + Machine", hours: "3 hrs", desc: "Extending Zero Trust to every agent, service account, and API. Continuous verification, adaptive access, and ITDR at machine speed.", topics: ["Continuous Verification", "Adaptive Access Control", "Microsegmentation & Identity", "Zero Trust Policy Design Lab"] },
-  { num: "05", title: "IAM Tooling & Platform Strategy", hours: "3 hrs", desc: "Evaluating the modern IAM stack: IGA, PAM, CIEM, ISPM, ITDR. Vendor-neutral platform assessment and integration architecture.", topics: ["Modern IAM Stack", "Vendor Landscape Analysis", "Passwordless & Phishing-Resistant Auth", "IAM Tool Evaluation Lab"] },
-  { num: "06", title: "Governance, Risk & Compliance", hours: "3 hrs", desc: "Navigating EU AI Act, NIST AI RMF, ISO 42001, SOX, HIPAA, and PCI-DSS identity requirements. Policy templates and risk frameworks.", topics: ["Regulatory Landscape", "AI Identity Policies", "Board-Level Communication", "Policy & Risk Assessment Lab"] },
-  { num: "07", title: "Real-World Implementation", hours: "4 hrs", desc: "Enterprise case studies from financial services, healthcare, and technology. Migration strategies and building the business case.", topics: ["Financial Services Case Study", "Healthcare Case Study", "Technology Case Study", "Implementation Roadmap Capstone"] },
-  { num: "08", title: "The Future & Certification", hours: "2 hrs", desc: "Post-quantum cryptography, decentralized identity for agents, agent-to-agent economies, and your final certification assessment.", topics: ["Post-Quantum Cryptography", "Decentralized Identity & DIDs", "Identity as Code", "Final Exam & Certification"] },
+  { num: "01", title: "The Identity Revolution", desc: "How identity replaced the network as the security boundary. Zero Trust as an identity strategy. IAM foundations refreshed for the machine era.", topics: ["The New Perimeter", "IAM Foundations Refreshed", "Identity-First Security", "Identity Landscape Mapping Lab"] },
+  { num: "02", title: "Non-Human Identities Deep Dive", desc: "Classifying and governing NHIs: service accounts, API keys, tokens, bots, RPA, AI agents, and MCP connections at enterprise scale.", topics: ["NHI Taxonomy & Lifecycle", "Secrets Management", "Privilege Sprawl & Identity Debt", "NHI Discovery & Classification Lab"] },
+  { num: "03", title: "Agentic AI: The New Identity Frontier", desc: "Provisioning, credentialing, and governing autonomous AI agents. MCP protocols, shadow AI detection, and prompt injection defense.", topics: ["Agent Identity Architecture", "MCP & Agent Protocols", "Shadow AI & Rogue Agents", "Securing Agent Workflows Lab"] },
+  { num: "04", title: "Zero Trust for Human + Machine", desc: "Extending Zero Trust to every agent, service account, and API. Continuous verification, adaptive access, and ITDR at machine speed.", topics: ["Continuous Verification", "Adaptive Access Control", "Microsegmentation & Identity", "Zero Trust Policy Design Lab"] },
+  { num: "05", title: "IAM Tooling & Platform Strategy", desc: "Evaluating the modern IAM stack: IGA, PAM, CIEM, ISPM, ITDR. Vendor-neutral platform assessment and integration architecture.", topics: ["Modern IAM Stack", "Vendor Landscape Analysis", "Passwordless & Phishing-Resistant Auth", "IAM Tool Evaluation Lab"] },
+  { num: "06", title: "Governance, Risk & Compliance", desc: "Navigating EU AI Act, NIST AI RMF, ISO 42001, SOX, HIPAA, and PCI-DSS identity requirements. Policy templates and risk frameworks.", topics: ["Regulatory Landscape", "AI Identity Policies", "Board-Level Communication", "Policy & Risk Assessment Lab"] },
+  { num: "07", title: "Real-World Implementation", desc: "Enterprise case studies from financial services, healthcare, and technology. Migration strategies and building the business case.", topics: ["Financial Services Case Study", "Healthcare Case Study", "Technology Case Study", "Implementation Roadmap Capstone"] },
+  { num: "08", title: "The Future & Certification", desc: "Post-quantum cryptography, decentralized identity for agents, agent-to-agent economies, and your final certification assessment.", topics: ["Post-Quantum Cryptography", "Decentralized Identity & DIDs", "Identity as Code", "Final Exam & Certification"] },
 ];
 
 const COURSE2_MODULES = [
@@ -69,10 +69,9 @@ const PRICING = [
     track: "Build",
     price: "$797",
     originalPrice: "$997",
-    per: "Early Release \u2014 Coming in May",
+    per: "Early Sign-Up Starts May 4 — Class Starts May 14",
     features: [
-      "8 modules \u2022 ~26 hours",
-      "6 hands-on labs + capstone",
+      "8 modules | 10 hours | 8 labs | Exam",
       "IAM specialty credential",
       "12 months course access",
       "Permanent credential verification",
@@ -80,8 +79,8 @@ const PRICING = [
     cta: "Notify Me at Launch",
     state: "live",
     color: "#2DD4BF",
-    badge: "Early Release: Coming in May",
-    note: "$797 Early Release Rate \u2014 30 days from launch",
+    badge: "Early Sign-Up Starts May 4",
+    note: "$797 Early Release Rate — through June 5",
     href: buildMailto(
       "Course 1 Launch Notification Request \u2014 IAM for the Agentic AI Era",
       "Hi,\n\nPlease notify me when Course 1: IAM for the Agentic AI Era launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
@@ -93,8 +92,6 @@ const PRICING = [
     price: "TBD",
     per: "Pricing announced at launch",
     features: [
-      "8 modules \u2022 20-24 hours",
-      "7 hands-on labs + capstone",
       "GRC specialty credential",
       "12 months course access",
       "Permanent credential verification",
@@ -113,8 +110,6 @@ const PRICING = [
     price: "TBD",
     per: "Pricing announced at launch",
     features: [
-      "8 modules \u2022 20-24 hours",
-      "7 hands-on labs + capstone",
       "Security Ops credential",
       "12 months course access",
       "Permanent credential verification",
@@ -133,8 +128,6 @@ const PRICING = [
     price: "TBD",
     per: "Pricing announced at launch",
     features: [
-      "8 modules \u2022 ~12 hours",
-      "3 advanced labs + capstone",
       "Engineering credential",
       "12 months course access",
       "Permanent credential verification",
@@ -340,7 +333,7 @@ function HeroSection() {
         <div className="stat-pills flex flex-wrap justify-center gap-4">
           {[
             { color: "#2DD4BF", label: "Course 1: IAM for the Agentic AI Era" },
-            { color: "#4CAF50", label: "8 Modules \u00B7 ~26 Hours" },
+            { color: "#4CAF50", label: "8 Modules | 10 Hours | 8 Labs | Exam" },
             { color: "#64C8FF", label: "Hands-On Labs in Every Module" },
             { color: "#F59E0B", label: "Coming Soon: Compliance \u00B7 Operations \u00B7 Engineering" },
           ].map((pill) => (
@@ -365,7 +358,7 @@ function WhyNowSection() {
             The Threat Landscape Has <span className="text-[#0D7377]">Fundamentally Shifted</span>
           </h2>
           <p className="text-lg text-white/85 max-w-3xl mx-auto">
-            Non-human identities outnumber humans 100-to-1. AI agents execute workflows with elevated privileges.
+            Non-human identities outnumber humans 82-to-1. AI agents execute workflows with elevated privileges.
             The EU AI Act is enforceable August 2026. Shadow AI is in every department. Organizations need professionals
             who can build the identity layer, govern compliance, and operate AI securely every single day.
           </p>
@@ -402,7 +395,7 @@ function CoursesOverviewSection() {
           {/* Course 1 */}
           <div className="reveal rounded-2xl border border-[#0D7377]/30 bg-gradient-to-b from-[rgba(13,115,119,0.08)] to-transparent p-8 relative">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full border border-[#2DD4BF]/40 bg-[#2DD4BF]/10">
-              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-medium">Early Release &middot; Coming in May</span>
+              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-medium">Early Sign-Up Starts May 4</span>
             </div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-[#0D7377]/15 border border-[#0D7377]/30 flex items-center justify-center">
@@ -425,7 +418,7 @@ function CoursesOverviewSection() {
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center gap-2 text-sm text-white/85">
-                <span className="text-[#0D7377]">&#9656;</span> 8 modules &bull; ~26 hours &bull; 6 labs + capstone
+                <span className="text-[#0D7377]">&#9656;</span> 8 modules | 10 hours | 8 labs | Exam
               </div>
               <div className="flex items-center gap-2 text-sm text-white/85">
                 <span className="text-[#0D7377]">&#9656;</span> NHIs, MCP security, privilege sprawl, ITDR, Zero Trust
@@ -439,7 +432,7 @@ function CoursesOverviewSection() {
               <span className="text-sm text-white/85">
                 <span className="text-white/50 line-through mr-1">$997</span>
                 <span className="text-[#2DD4BF] font-semibold">$797</span>
-                <span className="text-white/75"> &mdash; Early Release Rate, 30 days from launch</span>
+                <span className="text-white/75"> &mdash; Early Release Rate, through June 5</span>
               </span>
             </div>
           </div>
@@ -619,7 +612,7 @@ function CurriculumSection() {
   const [activeTab, setActiveTab] = useState("course1");
   const moduleMap = { course1: COURSE1_MODULES, course2: COURSE2_MODULES, course3: COURSE3_MODULES, course4: COURSE4_MODULES };
   const infoMap = {
-    course1: { label: "Course 1", title: "IAM for the Agentic AI Era", color: "#2DD4BF", hours: "~26 hours", labs: "6 hands-on labs + capstone" },
+    course1: { label: "Course 1", title: "IAM for the Agentic AI Era", color: "#2DD4BF", hours: "10 hours", labs: "8 labs" },
     course2: { label: "Course 2", title: "AI Compliance & Governance Frameworks", color: "#4CAF50", hours: "20-24 hours", labs: "7 hands-on labs + capstone" },
     course3: { label: "Course 3", title: "Operating & Securing AI in Production", color: "#64C8FF", hours: "20-24 hours", labs: "7 hands-on labs + capstone" },
     course4: { label: "Course 4", title: "AI Governance for Engineers", color: "#F59E0B", hours: "~12 hours", labs: "3 hands-on labs" },
@@ -633,7 +626,7 @@ function CurriculumSection() {
         <div className="text-center mb-12 reveal">
           <p className="text-base md:text-lg font-bold tracking-[4px] uppercase text-[#2DD4BF] mb-4">Curriculum</p>
           <h2 className="font-['Playfair_Display',serif] text-4xl md:text-5xl font-bold text-white mb-6">
-            IAM for Agentic AI <span className="text-white/40">&middot;</span> 8 Modules <span className="text-white/40">&middot;</span> <span className="text-[#2DD4BF]">6 Labs + Capstone</span>
+            IAM for Agentic AI <span className="text-white/40">&middot;</span> 8 Modules <span className="text-white/40">&middot;</span> <span className="text-[#2DD4BF]">8 Labs</span>
           </h2>
         </div>
 
@@ -649,7 +642,7 @@ function CurriculumSection() {
               }`}
             >
               <span>Course 1: IAM for Agentic AI</span>
-              <span className="text-[10px] tracking-widest uppercase font-bold text-[#2DD4BF] mt-1">Early Release: Coming in May</span>
+              <span className="text-[10px] tracking-widest uppercase font-bold text-[#2DD4BF] mt-1">Early Sign-Up Starts May 4</span>
             </button>
             <button
               onClick={() => setActiveTab("course2")}
@@ -811,7 +804,7 @@ function PricingSection() {
           </h2>
           <p className="text-lg text-white/80">
             Individual courses, the advanced engineering track, or the complete program.
-            Course 1 launches in May with a 30-day Early Release Rate at $797 &mdash; join the launch notification list to lock it in.
+            Course 1 class starts May 14. Early sign-up opens May 4 with a $797 Early Release Rate through June 5 &mdash; join the launch list to lock it in.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -937,10 +930,10 @@ function RoadmapSection() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Course 1 - Early Release Coming in May */}
+          {/* Course 1 - Early Sign-Up Starts May 4 */}
           <div className="reveal rounded-2xl border-2 border-[#2DD4BF] bg-gradient-to-b from-[rgba(45,212,191,0.10)] to-transparent p-8 relative shadow-[0_0_24px_-8px_rgba(45,212,191,0.5)]">
             <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#2DD4BF]/15 border border-[#2DD4BF]/40">
-              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-bold">Early Release: Coming in May</span>
+              <span className="text-[10px] text-[#2DD4BF] tracking-widest uppercase font-bold">Early Sign-Up Starts May 4</span>
             </div>
             <div className="text-4xl font-bold text-[#2DD4BF]/30 font-['Playfair_Display',serif] mb-4">01</div>
             <p className="text-xs text-[#2DD4BF] tracking-wider uppercase font-medium mb-2">Build</p>
@@ -948,7 +941,7 @@ function RoadmapSection() {
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Deep and narrow: identity & access management for autonomous AI agents, non-human identities, and Zero Trust.
             </p>
-            <p className="text-xs text-white">8 modules &bull; ~26 hrs &bull; 6 labs + capstone &bull; IAM badge</p>
+            <p className="text-xs text-white">8 modules | 10 hours | 8 labs | Exam | IAM badge</p>
           </div>
 
           {/* Course 2 - Coming Soon */}
@@ -1043,7 +1036,7 @@ function CTASection() {
             Secure the Future of <span className="text-[#0D7377]">AI</span>
           </h2>
           <p className="text-lg text-white/85 mb-10 max-w-xl mx-auto">
-            Course 1 (IAM for the Agentic AI Era) launches in May with a 30-day Early Release Rate at $797.
+            Course 1 (IAM for the Agentic AI Era) class starts May 14. Early sign-up opens May 4 — $797 Early Release Rate through June 5.
             Courses 2, 3, and 4 launching soon after Course 1. Get notified when courses are released and you can register.
           </p>
 
