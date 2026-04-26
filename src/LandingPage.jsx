@@ -21,36 +21,36 @@ const COURSE1_MODULES = [
 ];
 
 const COURSE2_MODULES = [
-  { num: "01", title: "Foundations of AI Governance", hours: "2.5 hrs", desc: "Why AI governance matters, the global regulatory landscape, and how EU AI Act, ISO 42001, and NIST AI RMF layer together.", topics: ["Global Regulatory Landscape", "Risk-Based vs Rights-Based Models", "The Three Pillars", "Governance Maturity Assessment Lab"] },
-  { num: "02", title: "The EU AI Act: Law to Implementation", hours: "3 hrs", desc: "Deep dive into the world's first comprehensive AI law. Risk categories, obligations, timelines, and operationalizing compliance.", topics: ["Risk Categories & Prohibited Practices", "High-Risk AI & Conformity Assessment", "GPAI Obligations", "EU AI Act Risk Classification Lab"] },
-  { num: "03", title: "ISO/IEC 42001: Building an AIMS", hours: "3 hrs", desc: "The world's first certifiable AI standard. Build, implement, and prepare for audit of an AI Management System.", topics: ["10 Clauses + 38 Annex A Controls", "PDCA Cycle for AI", "ISO 27001 Overlap", "AIMS Gap Assessment Lab"] },
-  { num: "04", title: "NIST AI Risk Management Framework", hours: "2.5 hrs", desc: "Master the Govern-Map-Measure-Manage functions. Build a practical risk management program aligned to the US baseline.", topics: ["4 Core Functions & 60 Subcategories", "Trustworthy AI Characteristics", "NIST-to-ISO Control Mapping", "AI Risk Register Lab"] },
-  { num: "05", title: "Data Governance, Bias & Fairness", hours: "3 hrs", desc: "Govern training data, detect and mitigate bias, implement fairness testing. SHAP, LIME, model cards, and explainability.", topics: ["AI Data Lifecycle", "Bias Taxonomy & Detection Tools", "Fairness Definitions", "Bias Audit Lab"] },
-  { num: "06", title: "AI Risk Assessment & Model Risk", hours: "2.5 hrs", desc: "AI impact assessments, model validation, drift detection, red teaming, incident response, and third-party AI risk.", topics: ["ISO 42005 Impact Assessments", "Model Risk Management", "Red Teaming AI Systems", "AI Impact Assessment Lab"] },
-  { num: "07", title: "Building the AI Governance Program", hours: "3 hrs", desc: "Operationalize everything: governance structure, policies, control catalogs, compliance matrices, and audit evidence.", topics: ["Governance Operating Models", "Multi-Framework Control Catalog", "Board-Level Reporting", "Governance Program Blueprint Lab"] },
-  { num: "08", title: "Audit, Certification & Road Ahead", hours: "2.5 hrs", desc: "Prepare for ISO 42001 certification audit, continuous compliance, emerging regulations, and your 90-day implementation roadmap.", topics: ["ISO 42001 Audit Prep", "Continuous Compliance Tools", "Emerging Global Regulations", "90-Day Roadmap Capstone"] },
+  { num: "01", title: "Foundations of AI Governance", desc: "Why AI governance matters, the global regulatory landscape, and how EU AI Act, ISO 42001, and NIST AI RMF layer together.", topics: ["Global Regulatory Landscape", "Risk-Based vs Rights-Based Models", "The Three Pillars", "Governance Maturity Assessment Lab"] },
+  { num: "02", title: "The EU AI Act: Law to Implementation", desc: "Deep dive into the world's first comprehensive AI law. Risk categories, obligations, timelines, and operationalizing compliance.", topics: ["Risk Categories & Prohibited Practices", "High-Risk AI & Conformity Assessment", "GPAI Obligations", "EU AI Act Risk Classification Lab"] },
+  { num: "03", title: "ISO/IEC 42001: Building an AIMS", desc: "The world's first certifiable AI standard. Build, implement, and prepare for audit of an AI Management System.", topics: ["10 Clauses + 38 Annex A Controls", "PDCA Cycle for AI", "ISO 27001 Overlap", "AIMS Gap Assessment Lab"] },
+  { num: "04", title: "NIST AI Risk Management Framework", desc: "Master the Govern-Map-Measure-Manage functions. Build a practical risk management program aligned to the US baseline.", topics: ["4 Core Functions & 60 Subcategories", "Trustworthy AI Characteristics", "NIST-to-ISO Control Mapping", "AI Risk Register Lab"] },
+  { num: "05", title: "Data Governance, Bias & Fairness", desc: "Govern training data, detect and mitigate bias, implement fairness testing. SHAP, LIME, model cards, and explainability.", topics: ["AI Data Lifecycle", "Bias Taxonomy & Detection Tools", "Fairness Definitions", "Bias Audit Lab"] },
+  { num: "06", title: "AI Risk Assessment & Model Risk", desc: "AI impact assessments, model validation, drift detection, red teaming, incident response, and third-party AI risk.", topics: ["ISO 42005 Impact Assessments", "Model Risk Management", "Red Teaming AI Systems", "AI Impact Assessment Lab"] },
+  { num: "07", title: "Building the AI Governance Program", desc: "Operationalize everything: governance structure, policies, control catalogs, compliance matrices, and audit evidence.", topics: ["Governance Operating Models", "Multi-Framework Control Catalog", "Board-Level Reporting", "Governance Program Blueprint Lab"] },
+  { num: "08", title: "Audit, Certification & Road Ahead", desc: "Prepare for ISO 42001 certification audit, continuous compliance, emerging regulations, and your 90-day implementation roadmap.", topics: ["ISO 42001 Audit Prep", "Continuous Compliance Tools", "Emerging Global Regulations", "90-Day Roadmap Capstone"] },
 ];
 
 const COURSE3_MODULES = [
-  { num: "01", title: "The AI Threat Landscape", hours: "2.5 hrs", desc: "The 2026 AI threat landscape: prompt injection, agent hijacking, shadow AI, supply chain attacks, and the visibility gap your SOC can't see.", topics: ["AI Threat Taxonomy", "Agentic AI Attack Surface", "Shadow AI Explosion", "AI Attack Surface Mapping Lab"] },
-  { num: "02", title: "Shadow AI: Finding & Controlling", hours: "3 hrs", desc: "Discover, govern, and control unsanctioned AI tools across every department. DLP for AI, browser controls, and fast-track approval workflows.", topics: ["Shadow AI Discovery", "AI Acceptable Use Policy", "DLP for AI Tools", "Shadow AI Discovery & Remediation Lab"] },
-  { num: "03", title: "AI Security Awareness Training", hours: "2.5 hrs", desc: "Build an AI security awareness program that changes behavior. Prompt hygiene, output verification, deepfake defense, and role-specific training.", topics: ["EU AI Act Article 4 Literacy", "Prompt Hygiene", "Social Engineering via AI", "Build an Awareness Module Lab"] },
-  { num: "04", title: "Securing AI Agents in Production", hours: "3 hrs", desc: "Unique agent identities, least privilege, MCP security, tool use governance, human oversight patterns, and runtime guardrails.", topics: ["Agent Identity & Credentials", "MCP Security & Monitoring", "Human Oversight Patterns", "Agent Security Architecture Lab"] },
-  { num: "05", title: "AI Supply Chain & MLSecOps", hours: "3 hrs", desc: "MLBOM, model provenance, dependency scanning, data poisoning defense, vendor assessment, and securing the ML development lifecycle.", topics: ["ML Bill of Materials", "Model Scanning & Provenance", "Third-Party AI Vendor Assessment", "MLBOM & Vendor Assessment Lab"] },
-  { num: "06", title: "Continuous Monitoring & Detection", hours: "2.5 hrs", desc: "AI-specific SIEM rules, behavioral baselines, drift detection, prompt injection detection, and SOC playbooks for AI alerts.", topics: ["AI Behavioral Baselines", "Prompt Injection Detection", "SOC Playbook for AI", "AI Detection Rule Lab"] },
-  { num: "07", title: "AI Incident Response & Recovery", hours: "2.5 hrs", desc: "AI-specific IR playbooks, agent containment, forensics, root cause analysis, regulatory notification, and tabletop exercises.", topics: ["AI Incident Taxonomy", "Containment & Forensics", "Regulatory Notification", "AI Incident Tabletop Exercise Lab"] },
-  { num: "08", title: "Building the AI SecOps Program", hours: "2.5 hrs", desc: "The complete operational blueprint: roles, calendars, tool approval workflows, metrics, board reporting, and your 12-month roadmap.", topics: ["AI SecOps Operating Model", "Metrics That Matter", "Executive Reporting", "12-Month SecOps Roadmap Capstone"] },
+  { num: "01", title: "The AI Threat Landscape", desc: "The 2026 AI threat landscape: prompt injection, agent hijacking, shadow AI, supply chain attacks, and the visibility gap your SOC can't see.", topics: ["AI Threat Taxonomy", "Agentic AI Attack Surface", "Shadow AI Explosion", "AI Attack Surface Mapping Lab"] },
+  { num: "02", title: "Shadow AI: Finding & Controlling", desc: "Discover, govern, and control unsanctioned AI tools across every department. DLP for AI, browser controls, and fast-track approval workflows.", topics: ["Shadow AI Discovery", "AI Acceptable Use Policy", "DLP for AI Tools", "Shadow AI Discovery & Remediation Lab"] },
+  { num: "03", title: "AI Security Awareness Training", desc: "Build an AI security awareness program that changes behavior. Prompt hygiene, output verification, deepfake defense, and role-specific training.", topics: ["EU AI Act Article 4 Literacy", "Prompt Hygiene", "Social Engineering via AI", "Build an Awareness Module Lab"] },
+  { num: "04", title: "Securing AI Agents in Production", desc: "Unique agent identities, least privilege, MCP security, tool use governance, human oversight patterns, and runtime guardrails.", topics: ["Agent Identity & Credentials", "MCP Security & Monitoring", "Human Oversight Patterns", "Agent Security Architecture Lab"] },
+  { num: "05", title: "AI Supply Chain & MLSecOps", desc: "MLBOM, model provenance, dependency scanning, data poisoning defense, vendor assessment, and securing the ML development lifecycle.", topics: ["ML Bill of Materials", "Model Scanning & Provenance", "Third-Party AI Vendor Assessment", "MLBOM & Vendor Assessment Lab"] },
+  { num: "06", title: "Continuous Monitoring & Detection", desc: "AI-specific SIEM rules, behavioral baselines, drift detection, prompt injection detection, and SOC playbooks for AI alerts.", topics: ["AI Behavioral Baselines", "Prompt Injection Detection", "SOC Playbook for AI", "AI Detection Rule Lab"] },
+  { num: "07", title: "AI Incident Response & Recovery", desc: "AI-specific IR playbooks, agent containment, forensics, root cause analysis, regulatory notification, and tabletop exercises.", topics: ["AI Incident Taxonomy", "Containment & Forensics", "Regulatory Notification", "AI Incident Tabletop Exercise Lab"] },
+  { num: "08", title: "Building the AI SecOps Program", desc: "The complete operational blueprint: roles, calendars, tool approval workflows, metrics, board reporting, and your 12-month roadmap.", topics: ["AI SecOps Operating Model", "Metrics That Matter", "Executive Reporting", "12-Month SecOps Roadmap Capstone"] },
 ];
 
 const COURSE4_MODULES = [
-  { num: "01", title: "The Bottleneck Is a Design Flaw", hours: "1.5 hrs", desc: "Why governance bottlenecks are design problems, not headcount problems. The broken model vs. the new model — from 5-6 human decision points to 1-2.", topics: ["The Design Reframe", "Broken Model vs New Model", "5 Mindset Shifts"] },
-  { num: "02", title: "Compliance as Architecture", hours: "1.5 hrs", desc: "Compliance as a property, not a gate. The type-safety analogy. Structural control, automated verification, and continuous signal patterns.", topics: ["Property vs Gate", "Structural Control", "Automated Verification", "Continuous Signal"] },
-  { num: "03", title: "Policy-as-Code for AI Pipelines", hours: "1.5 hrs", desc: "Write OPA/Rego policies that enforce gate closure before agent tasking. Integrate into CI/CD pipelines. Test policy logic against allow and deny scenarios.", topics: ["OPA/Rego Policies", "CI/CD Integration", "Gate Enforcement", "Lab 1: Policy-as-Code"] },
-  { num: "04", title: "Risk-Tiered Automation", hours: "1.5 hrs", desc: "Classify AI agent tasks into Low/Medium/High risk tiers. Automated gate closure for Tier 1, async review for Tier 2, hard-block for Tier 3.", topics: ["Risk Classification", "Automated Gate Closure", "Async Human Review", "Hard-Block Criteria"] },
-  { num: "05", title: "NHI as an Enforcement Boundary", hours: "1.5 hrs", desc: "Four NHI design patterns: stage-scoped, JIT, gate-linked, audit-linked credentials. The credential IS the governance control.", topics: ["Stage-Scoped Credentials", "JIT Provisioning", "Gate-Linked Permissions", "Lab 2: NHI Scope Model"] },
-  { num: "06", title: "Governance Agent Design Patterns", hours: "1.5 hrs", desc: "Deploy AI to audit AI at machine speed. Scope verification, creep detection, evidence generation, and violation escalation — all automated.", topics: ["Governance Agent Architecture", "Scope Verification", "Auto-Evidence Generation", "Lab 3: Governance Agent Capstone"] },
-  { num: "07", title: "The Real Tooling Landscape", hours: "1.5 hrs", desc: "Honest assessment of the 4-layer governance stack: coding agents, policy engines, monitoring platforms, and NHI/IAM platforms. What works, what's emerging, what's missing.", topics: ["4-Layer Stack", "Coding Agent Governance", "Policy Engines (OPA/Cedar)", "The Honest Gap Map"] },
-  { num: "08", title: "Measuring Governance Performance", hours: "1.5 hrs", desc: "Define metrics that prove your governance architecture works. The new engineer identity: compliance by construction.", topics: ["Governance Metrics", "Practical Starter Stacks", "The New Engineer Identity", "Course Completion & Artifacts"] },
+  { num: "01", title: "The Bottleneck Is a Design Flaw", desc: "Why governance bottlenecks are design problems, not headcount problems. The broken model vs. the new model — from 5-6 human decision points to 1-2.", topics: ["The Design Reframe", "Broken Model vs New Model", "5 Mindset Shifts"] },
+  { num: "02", title: "Compliance as Architecture", desc: "Compliance as a property, not a gate. The type-safety analogy. Structural control, automated verification, and continuous signal patterns.", topics: ["Property vs Gate", "Structural Control", "Automated Verification", "Continuous Signal"] },
+  { num: "03", title: "Policy-as-Code for AI Pipelines", desc: "Write OPA/Rego policies that enforce gate closure before agent tasking. Integrate into CI/CD pipelines. Test policy logic against allow and deny scenarios.", topics: ["OPA/Rego Policies", "CI/CD Integration", "Gate Enforcement", "Lab 1: Policy-as-Code"] },
+  { num: "04", title: "Risk-Tiered Automation", desc: "Classify AI agent tasks into Low/Medium/High risk tiers. Automated gate closure for Tier 1, async review for Tier 2, hard-block for Tier 3.", topics: ["Risk Classification", "Automated Gate Closure", "Async Human Review", "Hard-Block Criteria"] },
+  { num: "05", title: "NHI as an Enforcement Boundary", desc: "Four NHI design patterns: stage-scoped, JIT, gate-linked, audit-linked credentials. The credential IS the governance control.", topics: ["Stage-Scoped Credentials", "JIT Provisioning", "Gate-Linked Permissions", "Lab 2: NHI Scope Model"] },
+  { num: "06", title: "Governance Agent Design Patterns", desc: "Deploy AI to audit AI at machine speed. Scope verification, creep detection, evidence generation, and violation escalation — all automated.", topics: ["Governance Agent Architecture", "Scope Verification", "Auto-Evidence Generation", "Lab 3: Governance Agent Capstone"] },
+  { num: "07", title: "The Real Tooling Landscape", desc: "Honest assessment of the 4-layer governance stack: coding agents, policy engines, monitoring platforms, and NHI/IAM platforms. What works, what's emerging, what's missing.", topics: ["4-Layer Stack", "Coding Agent Governance", "Policy Engines (OPA/Cedar)", "The Honest Gap Map"] },
+  { num: "08", title: "Measuring Governance Performance", desc: "Define metrics that prove your governance architecture works. The new engineer identity: compliance by construction.", topics: ["Governance Metrics", "Practical Starter Stacks", "The New Engineer Identity", "Course Completion & Artifacts"] },
 ];
 
 // Helper to build a mailto: URL with pre-filled subject and body.
@@ -71,7 +71,7 @@ const PRICING = [
     originalPrice: "$997",
     per: "Early Sign-Up Starts May 4 — Class Starts May 14",
     features: [
-      "8 modules | 10 hours | 8 labs | Exam",
+      "8 modules | 8 labs | Exam",
       "IAM specialty credential",
       "12 months course access",
       "Permanent credential verification",
@@ -333,7 +333,7 @@ function HeroSection() {
         <div className="stat-pills flex flex-wrap justify-center gap-4">
           {[
             { color: "#2DD4BF", label: "Course 1: IAM for the Agentic AI Era" },
-            { color: "#4CAF50", label: "8 Modules | 10 Hours | 8 Labs | Exam" },
+            { color: "#4CAF50", label: "8 Modules | 8 Labs | Exam" },
             { color: "#64C8FF", label: "Hands-On Labs in Every Module" },
             { color: "#F59E0B", label: "Coming Soon: Compliance \u00B7 Operations \u00B7 Engineering" },
           ].map((pill) => (
@@ -418,7 +418,7 @@ function CoursesOverviewSection() {
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center gap-2 text-sm text-white/85">
-                <span className="text-[#0D7377]">&#9656;</span> 8 modules | 10 hours | 8 labs | Exam
+                <span className="text-[#0D7377]">&#9656;</span> 8 modules | 8 labs | Exam
               </div>
               <div className="flex items-center gap-2 text-sm text-white/85">
                 <span className="text-[#0D7377]">&#9656;</span> NHIs, MCP security, privilege sprawl, ITDR, Zero Trust
@@ -463,9 +463,6 @@ function CoursesOverviewSection() {
             </p>
             <div className="space-y-2 mb-6">
               <div className="flex items-center gap-2 text-sm text-white/70">
-                <span className="text-[#4CAF50]/40">&#9656;</span> 8 modules &bull; 20-24 hours &bull; 7 labs + capstone
-              </div>
-              <div className="flex items-center gap-2 text-sm text-white/70">
                 <span className="text-[#4CAF50]/40">&#9656;</span> EU AI Act, ISO 42001, NIST AI RMF, bias, model risk
               </div>
               <div className="flex items-center gap-2 text-sm text-white/70">
@@ -506,9 +503,6 @@ function CoursesOverviewSection() {
               What do you do Monday morning when AI is already live?
             </p>
             <div className="space-y-2 mb-6">
-              <div className="flex items-center gap-2 text-sm text-white/70">
-                <span className="text-[#64C8FF]/40">&#9656;</span> 8 modules &bull; 20-24 hours &bull; 7 labs + capstone
-              </div>
               <div className="flex items-center gap-2 text-sm text-white/70">
                 <span className="text-[#64C8FF]/40">&#9656;</span> Shadow AI, agent security, MLSecOps, IR, SOC playbooks
               </div>
@@ -551,9 +545,6 @@ function CoursesOverviewSection() {
               governance agents, and risk-tiered automation.
             </p>
             <div className="space-y-2 mb-6">
-              <div className="flex items-center gap-2 text-sm text-white/70">
-                <span className="text-[#F59E0B]/40">&#9656;</span> 8 modules &bull; ~12 hours &bull; 3 hands-on labs
-              </div>
               <div className="flex items-center gap-2 text-sm text-white/70">
                 <span className="text-[#F59E0B]/40">&#9656;</span> OPA/Rego, NHI scoping, governance agents, MLSecOps
               </div>
@@ -612,10 +603,10 @@ function CurriculumSection() {
   const [activeTab, setActiveTab] = useState("course1");
   const moduleMap = { course1: COURSE1_MODULES, course2: COURSE2_MODULES, course3: COURSE3_MODULES, course4: COURSE4_MODULES };
   const infoMap = {
-    course1: { label: "Course 1", title: "IAM for the Agentic AI Era", color: "#2DD4BF", hours: "10 hours", labs: "8 labs" },
-    course2: { label: "Course 2", title: "AI Compliance & Governance Frameworks", color: "#4CAF50", hours: "20-24 hours", labs: "7 hands-on labs + capstone" },
-    course3: { label: "Course 3", title: "Operating & Securing AI in Production", color: "#64C8FF", hours: "20-24 hours", labs: "7 hands-on labs + capstone" },
-    course4: { label: "Course 4", title: "AI Governance for Engineers", color: "#F59E0B", hours: "~12 hours", labs: "3 hands-on labs" },
+    course1: { label: "Course 1", title: "IAM for the Agentic AI Era", color: "#2DD4BF", hours: "", labs: "8 labs" },
+    course2: { label: "Course 2", title: "AI Compliance & Governance Frameworks", color: "#4CAF50", hours: "", labs: "" },
+    course3: { label: "Course 3", title: "Operating & Securing AI in Production", color: "#64C8FF", hours: "", labs: "" },
+    course4: { label: "Course 4", title: "AI Governance for Engineers", color: "#F59E0B", hours: "", labs: "" },
   };
   const modules = moduleMap[activeTab];
   const courseInfo = infoMap[activeTab];
@@ -684,7 +675,11 @@ function CurriculumSection() {
         <div className="mb-8 text-center">
           <p className="text-xs tracking-wider uppercase font-medium mb-1" style={{ color: courseInfo.color }}>{courseInfo.label}</p>
           <p className="text-xl text-white font-semibold font-['Playfair_Display',serif]">{courseInfo.title}</p>
-          <p className="text-sm text-white/75 mt-1">8 modules &bull; {courseInfo.hours} &bull; {courseInfo.labs} &bull; Certification exam</p>
+          {courseInfo.labs ? (
+            <p className="text-sm text-white/75 mt-1">{["8 modules", courseInfo.hours, courseInfo.labs, "Certification exam"].filter(Boolean).join(" • ")}</p>
+          ) : (
+            <p className="text-sm text-white/75 mt-1">Coming soon &mdash; curriculum announced at launch</p>
+          )}
         </div>
 
         {/* Modules list */}
@@ -941,7 +936,7 @@ function RoadmapSection() {
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Deep and narrow: identity & access management for autonomous AI agents, non-human identities, and Zero Trust.
             </p>
-            <p className="text-xs text-white">8 modules | 10 hours | 8 labs | Exam | IAM badge</p>
+            <p className="text-xs text-white">8 modules | 8 labs | Exam | IAM badge</p>
           </div>
 
           {/* Course 2 - Coming Soon */}
@@ -955,7 +950,6 @@ function RoadmapSection() {
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Broad and comprehensive: EU AI Act, ISO 42001, NIST AI RMF, bias, model risk, and enterprise-wide AI governance.
             </p>
-            <p className="text-xs text-white">8 modules &bull; 20-24 hrs &bull; 7 labs + capstone &bull; GRC badge</p>
           </div>
 
           {/* Course 3 - Coming Soon */}
@@ -969,7 +963,6 @@ function RoadmapSection() {
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Day-to-day operations: shadow AI control, user education, agent security, supply chain, monitoring, and incident response.
             </p>
-            <p className="text-xs text-white">8 modules &bull; 20-24 hrs &bull; 7 labs + capstone &bull; Security Ops badge</p>
           </div>
 
           {/* Course 4 - Coming Soon */}
@@ -983,7 +976,6 @@ function RoadmapSection() {
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Compliance by construction: policy-as-code, NHI enforcement boundaries, governance agents, and building systems that are compliant by design.
             </p>
-            <p className="text-xs text-white">8 modules &bull; ~12 hrs &bull; 3 labs &bull; Engineering badge</p>
           </div>
         </div>
 
