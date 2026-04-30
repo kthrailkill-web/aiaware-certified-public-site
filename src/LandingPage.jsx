@@ -1083,7 +1083,26 @@ function Footer() {
             <a href="#contact" className="hover:text-white/60 transition-colors">Contact</a>
           </div>
         </div>
-        <div className="mt-8 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-8 pt-6 border-t border-white/5 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-white/40">
+          <a href="/legal/privacy.html" className="hover:text-[#0D7377] transition-colors">Privacy Policy</a>
+          <span className="text-white/15">·</span>
+          <a href="/legal/terms.html" className="hover:text-[#0D7377] transition-colors">Terms of Use</a>
+          <span className="text-white/15">·</span>
+          <a href="/legal/refund.html" className="hover:text-[#0D7377] transition-colors">Refund Policy</a>
+          <span className="text-white/15">·</span>
+          <a href="/legal/disclaimer.html" className="hover:text-[#0D7377] transition-colors">Disclaimer</a>
+          <span className="text-white/15">·</span>
+          <a href="/legal/trust.html" className="hover:text-[#0D7377] transition-colors">Trust &amp; Policies</a>
+          <span className="text-white/15">·</span>
+          <button
+            onClick={() => window.dispatchEvent(new Event('aiaware:open-cookie-settings'))}
+            className="hover:text-[#0D7377] transition-colors bg-transparent border-0 p-0 text-xs cursor-pointer"
+            style={{ font: 'inherit', color: 'inherit' }}
+          >
+            Cookie Settings
+          </button>
+        </div>
+        <div className="mt-4 pt-4 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex flex-col md:items-start items-center gap-1">
             <p className="text-xs text-white/20">&copy; 2026 AI Aware Certified&#8482;. All rights reserved.</p>
             <p className="text-xs text-white/30">AI Aware LLC &mdash; a Wyoming Limited Liability Company &bull; <a href="mailto:aiaware@aiawarecertified.com" className="hover:text-white/60 transition-colors">aiaware@aiawarecertified.com</a></p>

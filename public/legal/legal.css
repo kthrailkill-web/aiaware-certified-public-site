@@ -1,0 +1,200 @@
+/* AI Aware Certified — shared brand styling for legal pages
+   Matches the .com palette: dark teal gradient bg, DM Sans body, Playfair headings.
+   Edit here once; all legal pages inherit. */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@700;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(13,115,119,0.10) 0%, transparent 70%),
+    linear-gradient(135deg, #0a1a1a 0%, #0d2626 50%, #0a1a1a 100%);
+  background-attachment: fixed;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.7;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+.legal-doc {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 56px 32px 96px;
+}
+
+/* Header */
+.doc-header {
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(13,115,119,0.25);
+}
+
+.doc-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(13,115,119,1);
+  margin-bottom: 16px;
+}
+
+.doc-header .brand::before {
+  content: '';
+  display: inline-block;
+  width: 8px; height: 8px;
+  background: #14a098;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(20,160,152,0.7);
+}
+
+.doc-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.doc-meta {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.5px;
+}
+.doc-meta strong { color: rgba(255,255,255,0.7); font-weight: 700; }
+
+/* Plain-English summary callout */
+.summary {
+  background: linear-gradient(135deg, rgba(20,160,152,0.10) 0%, rgba(13,115,119,0.05) 100%);
+  border: 1px solid rgba(20,160,152,0.30);
+  border-left: 4px solid #14a098;
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin: 28px 0 36px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.82);
+}
+.summary strong { color: #14a098; font-weight: 700; }
+
+/* Headings */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 44px;
+  margin-bottom: 14px;
+  letter-spacing: -0.3px;
+}
+h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: #14a098;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+
+/* Body */
+p { margin-bottom: 14px; color: rgba(255,255,255,0.78); }
+p strong, li strong { color: #fff; font-weight: 700; }
+em { color: rgba(255,255,255,0.85); font-style: italic; }
+
+a {
+  color: #14a098;
+  text-decoration: underline;
+  text-decoration-color: rgba(20,160,152,0.4);
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+a:hover {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
+/* Lists */
+ul, ol { margin: 10px 0 18px 26px; }
+li { margin-bottom: 8px; color: rgba(255,255,255,0.78); }
+
+/* Important callouts */
+.callout-warn {
+  background: rgba(220,38,38,0.08);
+  border: 1px solid rgba(220,38,38,0.30);
+  border-left: 4px solid #dc2626;
+  border-radius: 6px;
+  padding: 16px 22px;
+  margin: 20px 0;
+  font-size: 14.5px;
+}
+.callout-warn strong { color: #fca5a5; }
+
+.callout-info {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-left: 4px solid rgba(13,115,119,0.6);
+  border-radius: 6px;
+  padding: 14px 20px;
+  margin: 16px 0;
+  font-size: 14.5px;
+}
+
+blockquote {
+  margin: 16px 0 16px 8px;
+  padding: 12px 20px;
+  border-left: 3px solid #14a098;
+  background: rgba(255,255,255,0.025);
+  font-style: italic;
+  color: rgba(255,255,255,0.85);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Tables (used in some docs) */
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14.5px; }
+th { background: rgba(13,115,119,0.20); color: #fff; text-align: left; padding: 10px 14px; font-weight: 700; }
+td { border-top: 1px solid rgba(255,255,255,0.08); padding: 10px 14px; color: rgba(255,255,255,0.78); }
+
+/* Footer */
+.doc-footer {
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+}
+.doc-footer .legal-nav {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.doc-footer .legal-nav a {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  font-size: 13px;
+}
+.doc-footer .legal-nav a:hover { color: #14a098; }
+
+.doc-footer .home-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: #14a098;
+  font-weight: 700;
+  text-decoration: none;
+}
+.doc-footer .home-link:hover { color: #fff; }
+
+/* Responsive */
+@media (max-width: 700px) {
+  .legal-doc { padding: 36px 20px 64px; }
+  .doc-header h1 { font-size: 32px; }
+  h2 { font-size: 22px; margin-top: 32px; }
+  body { font-size: 15px; }
+}
