@@ -17,7 +17,7 @@ const COURSE1_MODULES = [
   { num: "05", title: "IAM Tooling & Platform Strategy", desc: "Evaluating the modern IAM stack: IGA, PAM, CIEM, ISPM, ITDR. Vendor-neutral platform assessment and integration architecture.", topics: ["Modern IAM Stack", "Vendor Landscape Analysis", "Passwordless & Phishing-Resistant Auth", "IAM Tool Evaluation Lab"] },
   { num: "06", title: "Governance, Risk & Compliance", desc: "Navigating EU AI Act, NIST AI RMF, ISO 42001, SOX, HIPAA, and PCI-DSS identity requirements. Policy templates and risk frameworks.", topics: ["Regulatory Landscape", "AI Identity Policies", "Board-Level Communication", "Policy & Risk Assessment Lab"] },
   { num: "07", title: "Real-World Implementation", desc: "Enterprise case studies from financial services, healthcare, and technology. Migration strategies and building the business case.", topics: ["Financial Services Case Study", "Healthcare Case Study", "Technology Case Study", "Implementation Roadmap Capstone"] },
-  { num: "08", title: "The Future & Certification", desc: "Post-quantum cryptography, decentralized identity for agents, agent-to-agent economies, and your final certification assessment.", topics: ["Post-Quantum Cryptography", "Decentralized Identity & DIDs", "Identity as Code", "Final Exam & Certification"] },
+  { num: "08", title: "The Future: 2027 and Beyond", desc: "Post-quantum cryptography, decentralized identity for agents, agent-to-agent economies, and your final certification assessment.", topics: ["Post-Quantum Cryptography", "Decentralized Identity & DIDs", "Identity as Code", "Final Exam & Certification"] },
 ];
 
 const COURSE2_MODULES = [
@@ -80,7 +80,7 @@ const PRICING = [
     state: "live",
     color: "#2DD4BF",
     badge: "Class Starts May 14",
-    note: "$797 Early Release Rate — through June 5",
+    note: "$797 Early Release Rate — through June 15",
     href: buildMailto(
       "Course 1 Launch Notification Request \u2014 IAM for the Agentic AI Era",
       "Hi,\n\nPlease notify me when Course 1: IAM for the Agentic AI Era launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
@@ -432,7 +432,7 @@ function CoursesOverviewSection() {
               <span className="text-sm text-white/85">
                 <span className="text-white/50 line-through mr-1">$997</span>
                 <span className="text-[#2DD4BF] font-semibold">$797</span>
-                <span className="text-white/75"> &mdash; Early Release Rate, through June 5</span>
+                <span className="text-white/75"> &mdash; Early Release Rate, through June 15</span>
               </span>
             </div>
           </div>
@@ -799,7 +799,7 @@ function PricingSection() {
           </h2>
           <p className="text-lg text-white/80">
             Individual courses, the advanced engineering track, or the complete program.
-            Course 1 class starts May 14. Early sign-up opens May 4 with a $797 Early Release Rate through June 5 &mdash; join the launch list to lock it in.
+            Course 1 class starts May 14. Early sign-up opens May 4 with a $797 Early Release Rate through June 15 &mdash; join the launch list to lock it in.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1028,7 +1028,7 @@ function CTASection() {
             Secure the Future of <span className="text-[#0D7377]">AI</span>
           </h2>
           <p className="text-lg text-white/85 mb-10 max-w-xl mx-auto">
-            Course 1 (IAM for the Agentic AI Era) class starts May 14. Early sign-up opens May 4 — $797 Early Release Rate through June 5.
+            Course 1 (IAM for the Agentic AI Era) class starts May 14. Early sign-up opens May 4 — $797 Early Release Rate through June 15.
             Courses 2, 3, and 4 launching soon after Course 1. Get notified when courses are released and you can register.
           </p>
 
@@ -1084,7 +1084,10 @@ function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-white/20">&copy; 2026 AI Aware Certified&#8482;. All rights reserved.</p>
+          <div className="flex flex-col md:items-start items-center gap-1">
+            <p className="text-xs text-white/20">&copy; 2026 AI Aware Certified&#8482;. All rights reserved.</p>
+            <p className="text-xs text-white/30">AI Aware LLC &mdash; a Wyoming Limited Liability Company &bull; <a href="mailto:aiaware@aiawarecertified.com" className="hover:text-white/60 transition-colors">aiaware@aiawarecertified.com</a></p>
+          </div>
           <p className="text-xs text-white/15">Identity &bull; Governance &bull; Operations &bull; EU AI Act &bull; ISO 42001 &bull; NIST AI RMF &bull; MLSecOps</p>
         </div>
       </div>
