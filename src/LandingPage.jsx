@@ -123,7 +123,7 @@ const PRICING = [
     ),
   },
   {
-    tier: "Course 4: AI Governance for Engineers",
+    tier: "Course 4: AI Engineering & Assurance",
     track: "Engineer",
     price: "TBD",
     per: "Pricing announced at launch",
@@ -136,8 +136,8 @@ const PRICING = [
     state: "waitlist",
     color: "#F59E0B",
     href: buildMailto(
-      "Course 4 Launch Notification Request \u2014 AI Governance for Engineers",
-      "Hi,\n\nPlease notify me when Course 4: AI Governance for Engineers launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
+      "Course 4 Launch Notification Request \u2014 AI Engineering & Assurance",
+      "Hi,\n\nPlease notify me when Course 4: AI Engineering & Assurance launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
     ),
   },
   {
@@ -537,7 +537,7 @@ function CoursesOverviewSection() {
               </div>
             </div>
             <h3 className="font-['Playfair_Display',serif] text-2xl font-bold text-white/85 mb-2">
-              AI Governance for Engineers
+              AI Engineering & Assurance
             </h3>
             <p className="text-sm text-white/70 mb-1 font-medium italic">Compliance by Construction</p>
             <p className="text-sm text-white/70 mb-6 leading-relaxed">
@@ -554,8 +554,8 @@ function CoursesOverviewSection() {
             </div>
             <div className="flex items-center gap-4">
               <a href={buildMailto(
-                "Course 4 Launch Notification Request \u2014 AI Governance for Engineers",
-                "Hi,\n\nPlease notify me when Course 4: AI Governance for Engineers launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
+                "Course 4 Launch Notification Request \u2014 AI Engineering & Assurance",
+                "Hi,\n\nPlease notify me when Course 4: AI Engineering & Assurance launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
               )} className="btn-outline !py-2 !px-5 !text-sm !border-[#F59E0B]/40 !text-[#F59E0B]">Notify Me at Launch</a>
               <span className="text-sm text-white/75">Coming Soon</span>
             </div>
@@ -606,7 +606,7 @@ function CurriculumSection() {
     course1: { label: "Course 1", title: "IAM for the Agentic AI Era", color: "#2DD4BF", hours: "", labs: "8 labs" },
     course2: { label: "Course 2", title: "AI Compliance & Governance Frameworks", color: "#4CAF50", hours: "", labs: "" },
     course3: { label: "Course 3", title: "Operating & Securing AI in Production", color: "#64C8FF", hours: "", labs: "" },
-    course4: { label: "Course 4", title: "AI Governance for Engineers", color: "#F59E0B", hours: "", labs: "" },
+    course4: { label: "Course 4", title: "AI Engineering & Assurance", color: "#F59E0B", hours: "", labs: "" },
   };
   const modules = moduleMap[activeTab];
   const courseInfo = infoMap[activeTab];
@@ -665,7 +665,7 @@ function CurriculumSection() {
                   : "text-[#F59E0B] hover:text-[#F59E0B] border border-transparent"
               }`}
             >
-              <span>Course 4: AI Governance for Engineers</span>
+              <span>Course 4: AI Engineering & Assurance</span>
               <span className="text-[10px] tracking-widest uppercase font-bold text-[#F59E0B] mt-1">Coming Soon</span>
             </button>
           </div>
@@ -972,7 +972,7 @@ function RoadmapSection() {
             </div>
             <div className="text-4xl font-bold text-[#F59E0B]/20 font-['Playfair_Display',serif] mb-4">04</div>
             <p className="text-xs text-[#F59E0B] tracking-wider uppercase font-medium mb-2">Engineer</p>
-            <h3 className="font-['Playfair_Display',serif] text-xl font-bold text-white mb-3 leading-tight">AI Governance for Engineers</h3>
+            <h3 className="font-['Playfair_Display',serif] text-xl font-bold text-white mb-3 leading-tight">AI Engineering & Assurance</h3>
             <p className="text-sm text-white/80 leading-relaxed mb-4">
               Compliance by construction: policy-as-code, NHI enforcement boundaries, governance agents, and building systems that are compliant by design.
             </p>
