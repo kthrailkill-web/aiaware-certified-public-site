@@ -80,7 +80,7 @@ const PRICING = [
     state: "live",
     color: "#2DD4BF",
     badge: "Class Starts May 14",
-    note: "$797 Early Release Rate — through June 15",
+    note: "$797 Early Release Rate — through June 5",
     href: buildMailto(
       "Course 1 Launch Notification Request \u2014 IAM for the Agentic AI Era",
       "Hi,\n\nPlease notify me when Course 1: IAM for the Agentic AI Era launches.\n\nName: \nCompany / Role: \nNotes (optional): \n\nThanks!"
@@ -432,7 +432,7 @@ function CoursesOverviewSection() {
               <span className="text-sm text-white/85">
                 <span className="text-white/50 line-through mr-1">$997</span>
                 <span className="text-[#2DD4BF] font-semibold">$797</span>
-                <span className="text-white/75"> &mdash; Early Release Rate, through June 15</span>
+                <span className="text-white/75"> &mdash; Early Release Rate, through June 5</span>
               </span>
             </div>
           </div>
@@ -799,7 +799,7 @@ function PricingSection() {
           </h2>
           <p className="text-lg text-white/80">
             Individual courses, the advanced engineering track, or the complete program.
-            Course 1 class starts May 14. Early sign-up opens May 4 with a $797 Early Release Rate through June 15 &mdash; join the launch list to lock it in.
+            Course 1 class starts May 14. Early sign-up opens May 4 with a $797 Early Release Rate through June 5 &mdash; join the launch list to lock it in.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1028,7 +1028,7 @@ function CTASection() {
             Secure the Future of <span className="text-[#0D7377]">AI</span>
           </h2>
           <p className="text-lg text-white/85 mb-10 max-w-xl mx-auto">
-            Course 1 (IAM for the Agentic AI Era) class starts May 14. Early sign-up opens May 4 — $797 Early Release Rate through June 15.
+            Course 1 (IAM for the Agentic AI Era) class starts May 14. Early sign-up opens May 4 — $797 Early Release Rate through June 5.
             Courses 2, 3, and 4 launching soon after Course 1. Get notified when courses are released and you can register.
           </p>
 
